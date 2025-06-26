@@ -69,6 +69,27 @@ img{
 }
 .header-contact-info h2{
     font-size: 1.2rem;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.header-contact-info h2::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: var(--primary); 
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
+.header-contact-info h2:hover::after{
+   transform: scaleX(1);
+}
+.header-contact-info h2:hover{
+    color:var(--primary);
 }
 .header-contact-info p{
     font-size: 0.8rem;
@@ -343,6 +364,9 @@ nav{
     display: block;
     width: 25%;
 }
+.about-content .details-button:hover{
+    background-color: hsla(45, 89%, 61%, 0.7);
+}
 .about-content{
     display:flex;
     flex-direction: column;
@@ -360,8 +384,392 @@ nav{
 .about{
     background-color: #f7f6fa;
     padding: 7rem;
+    margin-top: 7rem;
+}
+.project-one{
+   width: 290%;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-one:hover {
+  transform: translateY(-10px); 
+}
+.project-one img{
+    width: 100%;
+    height: auto;
+}
+.project-one figcaption{
+    background-color: var(--bd-light);
+    box-shadow: 0 12px 40px 10px rgba(33, 37, 71, 0.15); 
+    padding: 1.5rem;
+}
+.project-one figcaption h3{
+    position: relative;
+    display: inline-block;
+}
+.project-one figcaption h3::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: var(--primary); 
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
+.project-one figcaption h3:hover::after{
+    transform: scaleX(1);
+}
+.projects figure{
+    width: calc(50% - 20px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.projects figure:hover{
+    transform: translateY(-10px); 
+}
+.projects figure img{
+    width:100%;
+    height:auto;
+}
+.projects figure figcaption{
+    background-color: var(--bd-light);
+    box-shadow: 0 12px 40px 10px rgba(33, 37, 71, 0.15); 
+    padding: 1rem;
+}
+.projects figure figcaption h3{
+    font-size: 1.2rem;
+    position: relative;
+    display: inline-block;
+}
+.projects figure figcaption h3::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: var(--primary); 
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
+.projects figure figcaption h3:hover::after{
+     transform: scaleX(1);
+}
+.projects{
+   display: flex;
+   flex-wrap: wrap;
+   gap:25px;
+}
+.project-section-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 10rem 2rem 10rem;
+}
+.project-section h3{
+    text-align: center;
+    
+}
+.project-section .first-h3{
+    color: var(--primary);
+}
+.project-section .second-h3{
+    font-size: 3rem;
+    font-weight: 800;
+}
+.view-more-button{
+    text-decoration: none;
+    color: black;
+    background-color: var(--primary);
+    padding: 0.9rem 2rem 0.9rem 2rem;
+    font-weight: 600;
+    font-size: 1rem;
+    display: block;
+    width: 12%;
+    margin: 50px auto;
+}
+.view-more-button:hover{
+    background-color: hsla(45, 89%, 61%, 0.7);
+}
+.project-section{
+    margin-top: 10rem;
 }
 
+.news-view-more-button{
+    text-decoration: none;
+    color: black;
+    background-color: var(--primary);
+    padding: 0.9rem 2rem 0.9rem 2rem;
+    font-weight: 600;
+    font-size: 1rem;
+    display: block;
+    width: 10%;
+    
+}
+.news-view-more-button:hover{
+    background-color: hsla(45, 89%, 61%, 0.7);
+}
+.news-h3{
+    color:var(--primary)
+}
+.publication-h3{
+    font-size: 4rem;
+    font-weight: 800;
+}
+.news-heading{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.news-link-1{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(/images/construction-site-news.jpg);
+    height: 400px;
+    width: 1000px;
+    background-size: cover;
+    background-position: center;
+}
+.date{
+    display:flex;
+    align-items: center;
+    gap:0.4rem;
+    color:var(--light);
+    font-size: 1rem;
+}
+.news-1-content{
+    color:var(--light);
+    padding: 13.5rem 1rem 0rem 1rem ;
+}
+.news-1-content h4{
+    position: relative;
+    display: inline-block;
+}
+.news-1-content h4::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: var(--primary); 
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
+.news-1-content h4:hover::after{
+     transform: scaleX(1);
+}
+.news-link-2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(/images/tractor-news.jpg);
+    height: 400px;
+    width: 1000px;
+    background-size: cover;
+    background-position: center;
+}
+.date{
+    display:flex;
+    align-items: center;
+    gap:0.4rem;
+    color:var(--light);
+    font-size: 1rem;
+}
+.news-2-content{
+    color:var(--light);
+    padding: 13.5rem 1rem 0rem 1rem ;
+}
+
+.news-2-content h4{
+    position: relative;
+    display: inline-block;
+}
+.news-2-content h4::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: var(--primary); 
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
+.news-2-content h4:hover::after{
+     transform: scaleX(1);
+}
+.news-link-3{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(/images/office-building.jpg);
+    height: 400px;
+    width: 1000px;
+    background-size: cover;
+    background-position: center;
+}
+.date{
+    display:flex;
+    align-items: center;
+    gap:0.4rem;
+    color:var(--light);
+    font-size: 1rem;
+}
+.news-3-content{
+    color:var(--light);
+    padding: 15.5rem 1rem 0rem 1rem ;
+}
+
+.news-3-content h4{
+    position: relative;
+    display: inline-block;
+}
+.news-3-content h4::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: var(--primary); 
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
+.news-3-content h4:hover::after{
+     transform: scaleX(1);
+}
+.news-link-4{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(/images/graph.jpg);
+    height: 400px;
+    width: 1000px;
+    background-size: cover;
+    background-position: center;
+}
+.date{
+    display:flex;
+    align-items: center;
+    gap:0.4rem;
+    color:var(--light);
+    font-size: 1rem;
+}
+.news-4-content{
+    color:var(--light);
+    padding: 13.5rem 1rem 0rem 1rem ;
+}
+
+.news-4-content h4{
+    position: relative;
+    display: inline-block;
+}
+.news-4-content h4::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: var(--primary); 
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
+.news-4-content h4:hover::after{
+     transform: scaleX(1);
+}
+
+.news-wrapper{
+    display:flex;
+    margin-top: 5rem;
+    gap:2rem;
+    width: 100%;
+}
+.news{
+    background-color: whitesmoke;
+    padding: 7rem;
+    margin-top: 7rem;
+}
+.contact-details{
+    display:flex;
+    align-items: center;
+    gap:1rem;
+    margin-top: 1.5rem;
+   color: #888888;
+}
+.quick-links{
+    color: var(--gray);
+}
+.quick-links img{
+    display:inline;
+    margin-right: 0.5rem;
+}
+.quick-links ul li{
+    list-style-type: none;
+    margin-top: 1rem;
+}
+.quick-links ul li a{
+    text-decoration: none;
+    color: #888888;
+}
+.know-more-button{
+    text-decoration: none;
+    color: black;
+    background-color: var(--primary);
+    padding: 0.9rem 2rem 0.9rem 2rem;
+    font-weight: 600;
+    font-size: 1rem;
+    display: block;
+    width: 35%;
+    margin-top: 1rem;
+    
+}
+.know-more-button:hover{
+    background-color: hsla(45, 89%, 61%, 0.7);
+}
+.brief p{
+    margin-top: 1rem;
+}
+
+.brief{
+    color: #888888;
+}
+.footer-details h4{
+    color: var(--light);
+    font-size: 1.7rem;
+}
+.footer-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 40px 20px;
+  color: #333;
+  flex-wrap: wrap;
+}
+
+.footer-details > div {
+  flex: 1 1 30%; /* grow, shrink, basis */
+  min-width: 250px; /* ensures wrap on smaller screens */
+}
+.social-icons{
+    display:flex;
+    gap: 1rem;
+   
+}
+.copyright-and-socials{
+    display:flex;
+    justify-content: space-between;
+    color: var(--light);
+    align-items: center;
+    padding: 1.3rem;
+}
+footer hr{
+    border: 1px solid #423f3f;
+    width:200%;
+    margin-left: -10rem;
+}
+footer{
+    background-color: black;
+    padding: 2rem 10rem 0rem 10rem;
+}
 /* Hide nav by default on small screens */
 @media screen and (max-width: 834px) {
   .hamburger {
