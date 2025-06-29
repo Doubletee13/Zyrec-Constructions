@@ -102,7 +102,17 @@ img{
     justify-content: center;
 }
 .header-info{
-    padding: 0.7rem;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  will-change: transform, opacity;
+}
+.header-logo-link{
+    text-decoration: none;
+    color:black;
+}
+.header-info.hide {
+     transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none;
 }
 .get-a-quote{
     text-decoration: none;
@@ -137,8 +147,13 @@ nav ul li a:hover{
 nav{
     background-color: black;
     padding: 1rem;
-    position: relative; /* Make ul position absolute relative to nav */
-    z-index: 100; /* Stay on top of other sections */
+}
+nav.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
 /* Hide hamburger by default */
 .hamburger {
@@ -496,7 +511,24 @@ nav{
 .project-section{
     margin-top: 10rem;
 }
-
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; 
+  height: 0;
+  overflow: hidden;
+}
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  border: none;
+}
+.visuals{
+    
+    margin-top: 10rem;
+}
 .news-view-more-button{
     text-decoration: none;
     color: black;
@@ -506,10 +538,11 @@ nav{
     font-size: 1rem;
     display: block;
     width: 10%;
-    
+    cursor: pointer;
 }
 .news-view-more-button:hover{
     background-color: hsla(45, 89%, 61%, 0.7);
+    cursor: pointer;
 }
 .news-h3{
     color:var(--primary)
@@ -685,7 +718,7 @@ nav{
 .news{
     background-color: whitesmoke;
     padding: 7rem;
-    margin-top: 7rem;
+    margin-top: -10rem;
 }
 .contact-details{
     display:flex;
@@ -766,23 +799,65 @@ footer hr{
     width:200%;
     margin-left: -10rem;
 }
+.upward-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 1000;
+  display: none; /* hidden by default */
+}
+
+.upward-icon img {
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.upward-icon img:hover {
+  transform: scale(1.1);
+}
+
 footer{
     background-color: black;
     padding: 2rem 10rem 0rem 10rem;
 }
-/* Hide nav by default on small screens */
-@media screen and (max-width: 834px) {
-  .hamburger {
+
+
+
+
+ @media (max-width: 480px) {
+  
+    header,main,footer{
+        width:100%;
+    }
+    
+  .hero{
+    width: 100%;
+  }
+  .header-logo h1{
+    text-align: center;
+  }
+  .header-info{
+    margin-right:0.5rem;
+  }
+    .hamburger {
     display: block;
     position: absolute;
     top: 0;
     left: 1rem;
     z-index: 1001;
+    color: var(--primary);
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
   }
 
   nav {
     position: relative;
     padding: 2rem;
+    width: 100%;
   }
 
   nav ul {
@@ -796,8 +871,8 @@ footer{
     text-align: center;
     padding: 1rem 0;
     z-index: 1000;
-    min-height:50vh;
-    border: 1px solid black; /* Border around the entire menu */
+    min-height: 50vh;
+    border: 1px solid black;
   }
 
   nav ul.active {
@@ -807,24 +882,941 @@ footer{
   }
 
   nav ul li {
-    width: 100%; /* Make sure each list item spans full width */
-    border-bottom: 1px solid black; /* Bottom border on each item */
-    
+    width: 100%;
+    border-bottom: 1px solid black;
+    margin-top: -1.5rem;
   }
 
   nav ul li:last-child {
-    border-bottom: none; /* Remove border from the last item */
+    border-bottom: none;
   }
 
   nav ul li a {
     color: black;
     margin: 1rem 0;
     display: block;
-    width: 100%; 
+    width: 100%;
+    font-size: 1rem;
+    
+  }
+
+  .header-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .header-logo {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .header-contact {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .hero-content {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 5rem;
+    width: 100%;
+    text-align: center;
+  }
+.hero-content h2{
+  font-size: 1.2rem;
+}
+  .hero-content .build-h2 {
+    font-size: 1.7rem;
+  }
+  
+
+  .hero-content .hero-buttons {
+    margin-top: 0.5rem;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .services-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+.explore-button{
+    width: 45%;
+}
+  .about-wrapper {
+    flex-direction: column;
+    margin-left: -4.5rem;
+  }
+.about-h3{
     font-size: 1.5rem;
-    padding: 0.2rem 0
+}
+  .about .about-image {
+    width: 100%;
+  }
+
+  .about-content .details-button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .project-section-wrapper {
+    flex-direction: column;
+    margin: 2rem 1rem;
+  }
+
+  .project-one {
+    width: 100%;
+  }
+  .project-section .second-h3{
+    font-size: 2rem;
+  }
+
+  .projects {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .projects figure{
+    width: 100%;
+  }
+
+  .view-more-button {
+    width: 57%;
+  }
+
+  .news-heading {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .news-heading .publication-h3{
+    font-size: 2rem;
+  }
+.news .news-view-more-button{
+    width: 100%;
+}
+  .news-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+
+    
+  }
+
+
+
+
+  .news-link-1,
+  .news-link-2,
+  .news-link-3,
+  .news-link-4 {
+    width: 100%;
+    height: 300px; /* reduced height for mobile usability */
+    background-size: cover;
+    background-position: center;
+  }
+
+  .news-1-content,
+  .news-2-content,
+  .news-3-content,
+  .news-4-content {
+    padding: 12rem 1rem 0 1rem; /* reduce top padding for visibility */
+  }
+
+  .news h4 {
+    font-size: 1rem;
+  }
+
+  .news-wrapper .date {
+    font-size: 0.8rem;
+  }
+
+  .news {
+    padding: 3rem 1rem; /* reduce padding for mobile layout */
+  }
+
+  .news-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .news-view-more-button {
+    width: 100%;
+    text-align: center;
+  }
+
+ 
+.news{
+    width: 100%;
+}
+ 
+
+  .footer-details {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    width: 100%;
+  }
+
+  .know-more-button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .copyright-and-socials {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  .upward-icon{
+    right: 3rem;
+  }
+
+  footer {
+    padding: 1rem;
+   
+  }
+
+  footer hr {
+    width: 100%;
+    margin-left: 0;
   }
 }
+
+
+
+
+@media (max-width: 932px) and (orientation: landscape) {
+  
+  header, main, footer {
+    width: 100%;
+  }
+
+  .hero {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .header-logo h1 {
+    text-align: center;
+  }
+
+  .header-info {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 0.5rem;
+    left: 1rem;
+    z-index: 1001;
+    color: var(--primary);
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  nav {
+    position: relative;
+    padding: 2rem;
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--bd-light);
+    width: 100%;
+    display: none;
+    text-align: center;
+    padding: 1rem 0;
+    z-index: 1000;
+    min-height: 40vh;
+    border: 1px solid black;
+  }
+
+  nav ul.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav ul li {
+    width: 100%;
+    border-bottom: 1px solid black;
+    margin-top: 0rem;
+    
+  }
+
+  nav ul li:last-child {
+    border-bottom: none;
+  }
+
+  nav ul li a {
+    font-size: 1.1rem;
+    padding: 0.5rem 0;
+    color: black;
+    
+  }
+
+  .hero-content {
+    padding: 0.5rem;
+    width: 100%;
+    text-align: center;
+    
+  }
+
+  .hero-content .build-h2 {
+    font-size: 1.7rem;
+  }
+
+  .hero-content .hero-buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .services-wrapper,
+  .about-wrapper,
+  .projects,
+  .news-wrapper,
+  .footer-details,
+  .copyright-and-socials {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .explore-button,
+  .view-more-button,
+  .know-more-button,
+  .news-view-more-button,
+  .details-button 
+  {
+    width: 50%;
+    text-align: center;
+  }
+.about-wrapper .details-button{
+    width: 40%;
+}
+  .about 
+  .projects figure,
+  .news-link-1,
+  .news-link-2,
+  .news-link-3,
+  .news-link-4 {
+    width: 45%;
+  }
+  .about .about-image{
+    width: 100%;
+  }
+  .about{
+    width: 100%;
+    margin-left: -3rem;
+  }
+
+  .project-section-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem;
+  }
+  .projects{
+    flex-direction: column;
+  }
+
+  .project-one{
+    width: 100%;
+  }
+  .projects figure{
+    width: 100%;
+  }
+   .news-heading {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .news-heading .publication-h3{
+    font-size: 2rem;
+  }
+.news .news-view-more-button{
+    width: 100%;
+}
+  .news-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+
+    
+  }
+
+
+
+
+  .news-link-1,
+  .news-link-2,
+  .news-link-3,
+  .news-link-4 {
+    width: 100%;
+    height: 300px; /* reduced height for mobile usability */
+    background-size: cover;
+    background-position: center;
+  }
+
+  .news-1-content,
+  .news-2-content,
+  .news-3-content,
+  .news-4-content {
+    padding: 12rem 1rem 0 1rem; /* reduce top padding for visibility */
+  }
+
+  .news h4 {
+    font-size: 1rem;
+  }
+
+  .news-wrapper .date {
+    font-size: 0.8rem;
+  }
+
+  .news {
+    padding: 3rem 1rem; /* reduce padding for mobile layout */
+  }
+
+  .news-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .news-view-more-button {
+    width: 100%;
+    text-align: center;
+  }
+
+ 
+.news{
+    width: 100%;
+}
+.footer-details{
+    flex-direction: column;
+}
+
+  .upward-icon {
+    right: 2rem;
+  }
+
+  footer {
+    padding: 2rem;
+  }
+
+  footer hr {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+@media (min-width: 600px) and (max-width: 1366px) and (orientation: portrait) {
+  header, main, footer {
+    width: 100%;
+  }
+
+  .hero {
+    width: 100%;
+  }
+
+  .header-logo h1 {
+    text-align: center;
+  }
+
+  .header-info {
+    margin-right: 2rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .header-logo,
+  .header-contact {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 1rem;
+    z-index: 1001;
+    color: var(--primary);
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  nav {
+    position: relative;
+    padding: 2rem;
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--bd-light);
+    width: 100%;
+    display: none;
+    text-align: center;
+    padding: 1rem 0;
+    z-index: 1000;
+    min-height: 50vh;
+    border: 1px solid black;
+  }
+
+  nav ul.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav ul li {
+    width: 100%;
+    border-bottom: 1px solid black;
+    margin-top: -1.5rem;
+  }
+
+  nav ul li:last-child {
+    border-bottom: none;
+  }
+
+  nav ul li a {
+    color: black;
+    margin: 1rem 0;
+    display: block;
+    width: 100%;
+    font-size: 1.3rem;
+    padding: 0.4rem 0;
+  }
+
+  .hero-content {
+    padding: 25rem 5rem 1rem 1rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-content .build-h2 {
+    font-size: 2rem;
+  }
+
+  .hero-content .hero-buttons {
+    margin-top: 1rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .services-wrapper,
+  .about-wrapper,
+  .project-section-wrapper,
+  .projects,
+  .news-wrapper,
+  .footer-details {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    
+  }
+  .services-container{
+    width: 80%;
+    margin-left: -4rem;
+  }
+
+  
+  .view-more-button,
+  .news-view-more-button,
+  .know-more-button 
+  {
+    width:27%;
+  }
+.explore-button{
+    width: 23%;
+}
+.about .about-wrapper .details-button{
+    width: 27%;
+}
+  .about-h3 {
+    font-size: 1.8rem;
+  }
+
+  .about .about-image {
+    width: 100%;
+  }
+
+  .about-content .details-button {
+    width: 100%;
+    text-align: center;
+  }
+.about{
+    margin-left: -4rem;
+}
+    .project-section-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem;
+  }
+  .projects{
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .project-one{
+    width: 100%;
+  }
+  .projects figure{
+    width: 100%;
+  }
+  .project-section .second-h3{
+    font-size: 1.8rem;
+    
+  }
+ 
+  .news-heading {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .news-heading .publication-h3 {
+    font-size: 2rem;
+  }
+
+  .news-link-1,
+  .news-link-2,
+  .news-link-3,
+  .news-link-4 {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    
+  }
+  .news-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .news h4 {
+    font-size: 1rem;
+  }
+.news-3-content
+  .news-wrapper .date {
+    font-size: 0.8rem;
+  }
+
+  .news {
+    padding: 3rem 1rem;
+    width: 100%;
+  }
+
+  .copyright-and-socials {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  .footer-details .quick-links{
+    margin-right:22rem;
+  }
+.footer-details{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 4rem 1rem 4rem;
+}
+  footer {
+    padding: 2rem;
+  }
+
+  footer hr {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .upward-icon {
+    right: 1rem;
+  }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1366px) and (orientation: landscape) {
+  header, main, footer {
+    width: 100%;
+  }
+
+  .hero {
+    width: 100%;
+  }
+
+  .header-logo h1 {
+    text-align: left;
+  }
+
+  .header-info {
+    margin-right: 4rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 1rem 3rem;
+  }
+
+  .header-logo,
+  .header-contact {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .header-contact .header-contact-info {
+    align-items: center;
+    width: 100%;
+  }
+
+  .header-contact .get-a-quote {
+    width: 180%;
+    padding: 1rem;
+    display: block;
+  }
+
+  /* Removed hamburger */
+  .hamburger {
+    display: none;
+  }
+
+  nav {
+    position: relative;
+    padding: 2rem;
+    width: 100%;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    position: static;
+    background-color: transparent;
+    width: auto;
+    min-height: auto;
+    padding: 0;
+    border: none;
+    gap: 2rem;
+  }
+
+  nav ul li {
+    border-bottom: none;
+    width: auto;
+    margin: 0;
+    text-align: left;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+    color: black;
+    text-decoration: none;
+  }
+
+  .hero-content {
+    padding: 8rem 4rem 2rem 4rem;
+    width: 100%;
+    text-align: left;
+  }
+
+  .hero-content .build-h2 {
+    font-size: 2.2rem;
+  }
+
+  .hero-content .hero-buttons {
+    margin-top: 1.5rem;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .services-wrapper,
+  .about-wrapper,
+  .project-section-wrapper,
+  .projects,
+  .news-wrapper,
+  .footer-details {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 2rem;
+  }
+
+  .services-container {
+    width: 45%;
+    margin-left: 0;
+  }
+
+  .view-more-button,
+  .news-view-more-button,
+  .know-more-button {
+    width: 23%;
+    text-align: center;
+  }
+
+  .explore-button {
+    width: 18%;
+  }
+
+  .about .about-wrapper .details-button {
+    width: 22%;
+  }
+
+  .about-h3 {
+    font-size: 2rem;
+  }
+
+  .about .about-image {
+    width: 45%;
+  }
+
+  .about-content .details-button {
+    width: auto;
+    text-align: left;
+  }
+
+  .about {
+    margin-left: 0;
+  }
+
+  .project-section-wrapper {
+    gap: 2rem;
+    margin: 2rem 4rem;
+  }
+
+  .projects {
+    flex-direction: row;
+    width: 100%;
+    gap: 2rem;
+  }
+
+  .project-one,
+  .projects figure {
+    width: 45%;
+  }
+
+  .project-section .second-h3 {
+    font-size: 2rem;
+  }
+
+  .news-heading {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .news-heading .publication-h3 {
+    font-size: 2.2rem;
+  }
+
+  .news-link-1,
+  .news-link-2,
+  .news-link-3,
+  .news-link-4 {
+    width: 45%;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .news h4 {
+    font-size: 1.1rem;
+  }
+
+  .news-1-content {
+    padding: 10rem 1rem 1rem 1rem;
+  }
+
+  .news-2-content {
+    padding: 8.5rem 1rem 1rem 1rem;
+  }
+
+  .news-3-content {
+    padding: 10rem 1rem 1rem 1rem;
+  }
+
+  .news-4-content {
+    padding: 8.5rem 1rem 1rem 1rem;
+  }
+
+  .news-wrapper .date {
+    font-size: 0.9rem;
+  }
+
+  .news {
+    padding: 2rem 4rem;
+    width: 100%;
+  }
+
+  .copyright-and-socials {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+    text-align: left;
+  }
+
+  .footer-details .quick-links {
+    margin-left: 0;
+  }
+
+  .footer-details {
+    display: flex;
+    gap:5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 4rem;
+
+  }
+
+  footer {
+    padding: 2rem 4rem;
+  }
+
+  footer hr {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .upward-icon {
+    right: 2rem;
+  }
+}
+
+
 
 
 
