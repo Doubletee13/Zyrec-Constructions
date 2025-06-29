@@ -170,7 +170,7 @@ nav.fixed {
   z-index: 1000;
 }
 .hero{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(/images/fourth-hero-bg.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../images/fourth-hero-bg.jpg);
     height: 60vh;
     background-repeat: no-repeat;
     background-size: cover;

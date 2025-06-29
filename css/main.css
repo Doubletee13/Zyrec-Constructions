@@ -27,7 +27,7 @@ body {
     line-height: 1.5;
     font-family: var(--bd-font-sans-serif);
     background-color: #fff;
-    background-color: white;
+    
 }
 .yellow-text{
     color: var(--primary);
@@ -167,7 +167,7 @@ nav.fixed {
   z-index: 1000;
 }
 .hero{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(/images/hero-bg-image.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../images/hero-bg-image.jpg);
     height: 77.5vh;
     background-repeat: no-repeat;
     background-size: cover;
