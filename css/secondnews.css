@@ -210,7 +210,7 @@ nav.fixed {
 
 
 .news-link-1{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(/images/tractor-news.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../images/tractor-news.jpg);
     padding-bottom: 2rem;
     height: 800px;
     width: 1300px;
@@ -588,9 +588,9 @@ footer{
   }
 
   .news-wrapper {
-    width: 250%;
+    width: 230%;
     padding: 2rem 1rem;
-    margin-left: -7rem;
+    margin-left: -6rem;
   }
 
   .news-link-1 {

@@ -210,7 +210,7 @@ nav.fixed {
 
 
 .news-link-1{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(/images/construction-site-news.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../images/construction-site-news.jpg);
     padding-bottom: 2rem;
     height: 800px;
     width: 1300px;
@@ -604,6 +604,7 @@ footer{
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    width: 100%;
   }
 
   .news-link-1 {

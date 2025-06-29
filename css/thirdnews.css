@@ -206,7 +206,7 @@ nav.fixed {
 
 
 .news-link-1{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(/images/office-building.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../images/office-building.jpg);
     padding-bottom: 2rem;
     height: 800px;
     width: 1300px;

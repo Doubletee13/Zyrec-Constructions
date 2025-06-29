@@ -210,7 +210,7 @@ nav.fixed {
 
 
 .news-link-1{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(/images/graph.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../images/graph.jpg);
     padding-bottom: 2rem;
     height: 800px;
     width: 1300px;
@@ -579,12 +579,11 @@ footer{
     font-size: 1.5rem;
   }
 
-  .news-wrapper {
-    padding: 1rem 2rem 1rem 2rem;
-    width: 250%;
-    margin-left: -7rem;
+   .news-wrapper {
+    width: 230%;
+    padding: 2rem 1rem;
+    margin-left: -6rem;
   }
-
   .news-link-1 {
     width: 100%;
     height: auto;
