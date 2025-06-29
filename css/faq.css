@@ -67,6 +67,10 @@ img{
     align-items: center;
     gap: 3rem; 
 }
+.header-logo-link{
+    text-decoration: none;
+    color:black;
+}
 .header-contact-info h2{
     font-size: 1.2rem;
     position: relative;
