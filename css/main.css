@@ -1063,7 +1063,7 @@ footer{
   }
 
   .know-more-button {
-    width: 100%;
+    width: 60%;
     text-align: center;
   }
 
@@ -1073,7 +1073,8 @@ footer{
     text-align: center;
   }
   .upward-icon{
-    right: 3rem;
+    right: 2.2rem;
+    bottom: 0.5rem;
   }
 
   footer {
