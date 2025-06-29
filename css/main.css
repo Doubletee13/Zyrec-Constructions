@@ -943,6 +943,9 @@ footer{
     flex-direction: column;
     align-items: center;
   }
+  .services-wrapper .services-container{
+    width: 100%;
+  }
 .explore-button{
     width: 45%;
 }
