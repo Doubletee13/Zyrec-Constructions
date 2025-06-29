@@ -210,7 +210,7 @@ nav.fixed {
 
 
 .news-link-1{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(/images/construction-site-news.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../images/construction-site-news.jpg);
     height: 800px;
     width: 1000px;
     background-size: cover;
@@ -264,7 +264,7 @@ nav.fixed {
     margin-top: 2rem;
 }
 .news-link-2{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(/images/tractor-news.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../images/tractor-news.jpg);
     height: 800px;
     width: 1000px;
     background-size: cover;
@@ -320,7 +320,7 @@ nav.fixed {
     color:var(--primary);
 }
 .news-link-3{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(/images/office-building.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../images/office-building.jpg);
     height: 800px;
     width: 1000px;
     background-size: cover;
@@ -362,7 +362,7 @@ nav.fixed {
     color: var(--primary);
 }
 .news-link-4{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(/images/graph.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../images/graph.jpg);
     height: 800px;
     width: 1000px;
     background-size: cover;
@@ -405,7 +405,7 @@ nav.fixed {
 }
 
 .news-link-5{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(/images/excravator.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../images/excravator.jpg);
     height: 800px;
     width: 1000px;
     background-size: cover;
