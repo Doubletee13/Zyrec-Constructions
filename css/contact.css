@@ -611,7 +611,9 @@ footer{
     margin-left: 0;
     padding: 1rem;
   }
-
+.email-details p{
+  font-size: 0.9rem;
+}
   .location,
   .contact-form-container {
     width: 100%;
