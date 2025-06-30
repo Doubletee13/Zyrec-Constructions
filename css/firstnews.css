@@ -409,7 +409,7 @@ footer hr{
 footer{
     background-color: black;
     padding: 2rem 10rem 0rem 10rem;
-    margin-top: 10rem;
+    
 }
 /* Hide nav by default on small screens */
 @media screen and (max-width: 834px) {
