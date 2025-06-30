@@ -307,7 +307,7 @@ nav.fixed {
 }
 .contact-wrapper{
   display: flex;
-  margin-left:200px;
+  margin-left:100px;
   padding: 3rem;
   
 }
@@ -415,6 +415,7 @@ footer hr{
 footer{
     background-color: black;
     padding: 2rem 10rem 0rem 10rem;
+    
 }
 /* Hide nav by default on small screens */
 @media screen and (max-width: 834px) {
