@@ -238,6 +238,7 @@ nav.fixed {
 .founders figure img{
     width: 100%;
     height: auto;
+    aspect-ratio: 1/1;
 }
 .founders figure figcaption{
     background-color: rgb(70, 66, 66);
