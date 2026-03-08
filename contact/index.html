@@ -1,230 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-     <meta charset="UTF-8" />
-     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <meta
-        name="description"
-        content="Zyrec Constructions provides innovative and reliable building solutions, specializing in infrastructure for urban and remote developments."
-    />
-    <meta
-      name="keywords"
-      content="construction, infrastructure, building, civil engineering, urban development, remote projects, Zyrec"
-    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Contact Zyrec Constructions' headquarters for project inquiries, joint-venture proposals, and general operations questions." />
+    <meta name="keywords"
+        content="construction, infrastructure, building, civil engineering, urban development, remote projects, Zyrec" />
     <meta name="author" content="Zyrec Constructions" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="format-detection" content="telephone=no">
-    <title>Zyrec Constructions</title>
-    <link rel="stylesheet" href="../css/contact.css" />
-    <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
-    <script src="../script.js" defer ></script>
-
+    <meta name="format-detection" content="telephone=no" />
+    <title>Contact Us | Zyrec Constructions</title>
+    
+    <!-- Tailwind compiled CSS -->
+    <link rel="stylesheet" href="../css/tailwind-output.css" />
+    <link rel="icon" href="../images/favicon_z.png" type="image/png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;800;900&display=swap"
+        rel="stylesheet">
+    
+    <script src="../script.js" defer></script>
 </head>
-<body id="top">
-    <header>
-    <section class="header-info">
-        <a href="../" class="header-logo-link">
-        <div class="header-logo">
-            <img src="../images/Zyrec_logo.png" loading="lazy"  width="100" height="100" alt="Zyrec logo">
-            <h1>ZYREC CONSTRUCTION <span class="yellow-text">COMPANY</span></h1>
-        </div>
-        </a>
-        <div class="header-contact">
-            <div class="header-contact-info">
-            <h2>+1 980 446 0471</h2>
-            <p>Have You Any Enquiries</p>
-            </div>
-            <div>
-                <a href="../contact/" class="get-a-quote">Get A Qoute</a>
-            </div>
-        </div>
-    </section>
-    <nav>
-            <ul>
-                <li><a href="../">HOME</a></li>
-                <li><a href="../about/">ABOUT</a></li>
-                <li><a href="../services/">SERVICES</a></li>
-                <li><a href="../projects/">PROJECTS</a></li>
-                <li><a href="../faq/">FAQ</a></li>
-                <li><a href="../contact/">CONTACT</a></li>
-                <li><a href="../news/">NEWS</a></li>
-            </ul>
-            <button class="hamburger" id="hamburger-menu" aria-label="Menu">
-  &#9776;
-</button>
 
+<body id="top" class="font-sans text-gray bg-light antialiased selection:bg-primary selection:text-dark">
+    <!-- Header / Navbar -->
+    <header
+        class="w-full bg-dark backdrop-blur-md shadow-sm z-50 transition-all duration-300 fixed border-b border-white/10"
+        id="main-header" style="position: sticky; top: 0;">
+        <nav class="max-w-[90rem] mx-auto py-5 px-6 md:px-12 flex justify-between items-center w-full" id="main-nav">
+            <!-- Logo -->
+            <a href="../" class="flex items-center gap-3 group">
+                <div class="w-8 h-8 md:w-10 md:h-10 bg-primary rounded-full flex items-center justify-center transition-transform group-hover:scale-110 duration-300">
+                    <span class="text-dark font-display font-black text-base md:text-lg">Z</span>
+                </div>
+                <h1 class="text-xl md:text-2xl font-display font-black text-white tracking-tight">
+                    ZYREC.
+                </h1>
+            </a>
+
+            <!-- Desktop Menu -->
+            <ul class="hidden lg:flex gap-8 items-center text-sm font-semibold tracking-wide uppercase">
+                <li><a href="../" class="text-white hover:text-primary transition-colors py-1 relative group">HOME<span
+                            class="absolute left-0 -bottom-1 w-full h-[2px] bg-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span></a>
+                </li>
+                <li><a href="../about/" class="text-white hover:text-primary transition-colors py-1 relative group">ABOUT<span
+                            class="absolute left-0 -bottom-1 w-full h-[2px] bg-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span></a>
+                </li>
+                <li><a href="../services/" class="text-white hover:text-primary transition-colors py-1 relative group">SERVICES<span
+                            class="absolute left-0 -bottom-1 w-full h-[2px] bg-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span></a>
+                </li>
+                <li><a href="../projects/" class="text-white hover:text-primary transition-colors py-1 relative group">PROJECTS<span
+                            class="absolute left-0 -bottom-1 w-full h-[2px] bg-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span></a>
+                </li>
+                <li><a href="../faq/" class="text-white hover:text-primary transition-colors py-1 relative group">FAQ<span
+                            class="absolute left-0 -bottom-1 w-full h-[2px] bg-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span></a>
+                </li>
+                <li><a href="../news/" class="text-white hover:text-primary transition-colors py-1 relative group">NEWS<span
+                            class="absolute left-0 -bottom-1 w-full h-[2px] bg-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span></a>
+                </li>
+                <li><a href="../contact/" class="text-primary transition-colors py-1 relative group">CONTACT</a>
+                </li>
+            </ul>
+
+            <!-- CTA Button -->
+            <div class="hidden lg:flex items-center gap-6">
+                <a href="../contact/"
+                    class="bg-primary text-dark font-semibold text-sm px-8 py-3 rounded-full hover:bg-white transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5">Get A Quote</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="lg:hidden relative w-8 h-6 text-white hover:text-primary transition-colors focus:outline-none"
+                id="hamburger-menu" aria-label="Menu">
+                <span class="hamburger-line top-line"></span>
+                <span class="hamburger-line middle-line"></span>
+                <span class="hamburger-line bottom-line"></span>
+            </button>
+
+            <!-- Mobile Dropdown -->
+            <ul id="mobile-menu"
+                class="hidden flex-col items-center gap-6 mt-6 bg-white shadow-2xl absolute top-full left-0 w-full p-8 lg:hidden border-t border-gray-100">
+                <li><a href="../"
+                        class="hover:text-primary text-dark transition-colors font-display font-bold text-2xl">HOME</a>
+                </li>
+                <li><a href="../about/"
+                        class="hover:text-primary text-dark transition-colors font-display font-bold text-2xl">ABOUT</a>
+                </li>
+                <li><a href="../services/"
+                        class="hover:text-primary text-dark transition-colors font-display font-bold text-2xl">SERVICES</a>
+                </li>
+                <li><a href="../projects/"
+                        class="hover:text-primary text-dark transition-colors font-display font-bold text-2xl">PROJECTS</a>
+                </li>
+                <li><a href="../faq/"
+                        class="hover:text-primary text-dark transition-colors font-display font-bold text-2xl">FAQ</a>
+                </li>
+                <li><a href="../news/"
+                        class="hover:text-primary text-dark transition-colors font-display font-bold text-2xl">NEWS</a>
+                </li>
+                <li><a href="../contact/"
+                        class="mt-4 bg-primary text-dark font-bold px-10 py-4 rounded-full w-full text-center hover:bg-dark hover:text-white transition-colors">GET
+                        A QUOTE</a></li>
+            </ul>
         </nav>
     </header>
+
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h2>ZYREC CONSTRUCTIONS</h2>
-                <p>Building with Precision, Powered by Trust.</p>
+        <!-- Typographic Hero -->
+        <section class="min-h-[50vh] bg-dark flex flex-col justify-center items-center text-center px-6 relative overflow-hidden border-b border-primary/20">
+            <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#FBBF24 1px, transparent 1px); background-size: 30px 30px;"></div>
+            <div class="relative z-10 max-w-4xl mt-12">
+                <span class="inline-block py-1 px-3 rounded-full bg-primary/20 text-primary font-semibold tracking-widest text-sm uppercase mb-4 animate-fade-in-up">Support</span>
+                <h1 class="text-5xl md:text-7xl font-display font-black text-white tracking-tight mb-6 animate-fade-in-up" style="animation-delay: 100ms;">
+                    Contact <span class="text-primary italic">Us</span>
+                </h1>
+                <p class="text-lg md:text-xl text-white leading-relaxed font-light max-w-2xl mx-auto animate-fade-in-up" style="animation-delay: 200ms;">
+                    Reach out for inquiries, project proposals, or support.
+                </p>
             </div>
         </section>
-        
 
-         <section class="contact">
-            <h2>Want To Reach Us?</h2>
-            <div class="contact-wrapper">
-        <div class="location">
-          <div class="location-details">
-            <img
-              src="../images/location-icon.png"
-              width="50"
-              height="50"
-              alt="Orange Location Logo"
-              loading="lazy" 
-            />
-            <div>
-              <h3>Location</h3>
-              
-              <p>525 N Tryon Street, Suite 1600, Charlotte, NC, USA.</p>
-             
-            </div>
-          </div>
-          <div class="call-details">
-            <img
-              src="../images/phone-icon.png"
-              width="50"
-              height="50"
-              alt="Orange Phone Logo"
-              loading="lazy" 
-            />
-            <div>
-              <h3>Phone</h3>
-              <p>+1 980 446 0471</p>
-              
-            </div>
-          </div>
-          <div class="email-details">
-            <img
-              src="../images/email-icon.png"
-              width="50"
-              height="50"
-              alt="Orange Email Logo"
-              loading="lazy" 
-            />
-            <div>
-              <h3>Email</h3>
-              <p>admin@zyrecconstructions.com</p>
-            </div>
-          </div>
-        </div>
-        <div class="contact-form-container">
-          <form
-           action="https://formspree.io/f/myzjobow"
-            method="POST"
-            class="contact-form"
-          >
-            <input
-              type="text"
-              name="name"
-              placeholder="Your Name"
-              id="name"
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Your Email"
-              id="email"
-              required
-            />
-            <input
-              type="text"
-              name="subject"
-              placeholder="Subject"
-              id="subject"
-              required
-            />
-            <textarea
-              name="message"
-              placeholder="Message"
-              rows="10"
-              id="comment"
-              required
-            ></textarea>
-            <button type="submit">Send Message</button>
-          </form>
-        </div>
-        </div>
-      </section>
-      <section class="office-address">
-        <h2>See Our Office Location</h2>
-        
-        <div class="google-map-address">
-             <iframe
-  src="https://www.google.com/maps/embed?pb=!1m2!2m1!1s525+N+Tryon+Street,+Suite+1600,+Charlotte,+NC"
-  width="600"
-  height="450"
-  style="border:0;"
-  allowfullscreen=""
-  loading="lazy">
-</iframe>
+        <section class="py-24 px-6 bg-white">
+            <div class="max-w-[75rem] mx-auto grid lg:grid-cols-2 gap-16">
+                <!-- Info -->
+                <div class="flex flex-col justify-center">
+                    <h2 class="text-3xl md:text-5xl font-display font-bold text-dark mb-8 leading-tight">
+                        Reach out and let's <br><span class="text-primary italic">Build Together.</span>
+                    </h2>
+                    
+                    <div class="space-y-8">
+                        <div class="flex items-start gap-6 group">
+                            <div class="w-14 h-14 bg-light rounded-2xl flex items-center justify-center shrink-0 group-hover:bg-primary transition-colors border border-gray-100">
+                                <img src="../images/location-icon.png" width="24" height="24" alt="Location" class="opacity-80">
+                            </div>
+                            <div>
+                                <h3 class="font-display font-bold text-dark text-lg mb-1">Our Location</h3>
+                                <p class="text-gray leading-relaxed font-light">525 N Tryon Street, Suite 1600<br>Charlotte, NC, USA.</p>
+                            </div>
+                        </div>
 
-        </div>
-      </section>
+                        <div class="flex items-start gap-6 group">
+                            <div class="w-14 h-14 bg-light rounded-2xl flex items-center justify-center shrink-0 group-hover:bg-primary transition-colors border border-gray-100">
+                                <img src="../images/phone-icon.png" width="24" height="24" alt="Phone" class="opacity-80">
+                            </div>
+                            <div>
+                                <h3 class="font-display font-bold text-dark text-lg mb-1">Call Us</h3>
+                                <p class="text-gray leading-relaxed font-light">+1 980 446 0471</p>
+                            </div>
+                        </div>
 
+                        <div class="flex items-start gap-6 group">
+                            <div class="w-14 h-14 bg-light rounded-2xl flex items-center justify-center shrink-0 group-hover:bg-primary transition-colors border border-gray-100">
+                                <img src="../images/email-icon.png" width="24" height="24" alt="Email" class="opacity-80">
+                            </div>
+                            <div>
+                                <h3 class="font-display font-bold text-dark text-lg mb-1">Email Us</h3>
+                                <p class="text-gray leading-relaxed font-light">admin@zyrecconstructions.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <div class="bg-light p-8 md:p-12 rounded-3xl border border-gray-100 shadow-sm">
+                    <form action="https://formspree.io/f/myzjobow" method="POST" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-bold text-dark uppercase tracking-widest mb-3">NAME</label>
+                                <input type="text" name="name" placeholder="Your Name" class="w-full bg-white border border-gray-200 rounded-2xl px-6 py-4 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" required />
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-dark uppercase tracking-widest mb-3">EMAIL</label>
+                                <input type="email" name="email" placeholder="Your Email" class="w-full bg-white border border-gray-200 rounded-2xl px-6 py-4 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" required />
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-dark uppercase tracking-widest mb-3">SUBJECT</label>
+                            <input type="text" name="subject" placeholder="Subject" class="w-full bg-white border border-gray-200 rounded-2xl px-6 py-4 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" required />
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-dark uppercase tracking-widest mb-3">MESSAGE</label>
+                            <textarea name="message" placeholder="How can we help you?" rows="6" class="w-full bg-white border border-gray-200 rounded-2xl px-6 py-4 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all resize-none" required></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-dark text-white font-bold py-5 rounded-2xl hover:bg-primary hover:text-dark transition-all duration-300 shadow-lg group flex items-center justify-center gap-3">
+                            Send Message
+                            <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map -->
+        <section class="py-24 bg-light border-t border-gray-100">
+            <div class="max-w-[75rem] mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-display font-bold text-dark mb-4">Visit Our Office</h2>
+                    <p class="text-gray font-light">Charlotte Financial District Headquarters</p>
+                </div>
+                <div class="rounded-3xl overflow-hidden shadow-2xl border-8 border-white bg-white">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m2!2m1!1s525+N+Tryon+Street,+Suite+1600,+Charlotte,+NC"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </section>
     </main>
-<footer>
-    <div class="footer-details">
-        <div class="footer-contact">
-            <h4>Quick Contact</h4>
-            <div class="contact-details">
-                <img src="../images/phone-icon.png" loading="lazy"  width="30" height="30" alt="Phone Icon">
-                <p>+1 980 446 0471</p>
+
+    <!-- Modern Minimal Footer -->
+    <footer class="bg-dark text-white pt-24 pb-12">
+        <div class="max-w-[90rem] mx-auto px-6">
+            <!-- Footer Top CTA -->
+            <div
+                class="flex flex-col md:flex-row justify-between items-center mb-24 pb-12 border-b border-white/10 gap-8">
+                <h2 class="text-4xl md:text-5xl font-display font-black tracking-tight">Ready to build?</h2>
+                <a href="../contact/"
+                    class="bg-primary text-dark font-semibold px-10 py-5 rounded-full hover:bg-white transition-colors duration-300">Start
+                    a Project</a>
             </div>
-            <div class="contact-details">
-                <img src="../images/email-icon.png" loading="lazy"  width="30" height="30" alt="Email Icon">
-                <p class="email">admin@zyrecconstructions.com</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-24">
+                <!-- Brand -->
+                <div class="lg:col-span-1">
+                    <a href="../" class="flex items-center gap-3 mb-6">
+                        <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+                            <span class="text-dark font-display font-black text-sm">Z</span>
+                        </div>
+                        <h2 class="text-xl font-display font-black tracking-tight">ZYREC.</h2>
+                    </a>
+                    <p class="text-gray-400 font-light text-sm leading-relaxed mb-8">
+                        Global leaders in precision engineering and future-ready infrastructure development.
+                    </p>
+
+                    <!-- SVG Social Links (Shortened) -->
+                    <div class="flex gap-4">
+                        <a href="#" class="text-gray-500 hover:text-primary transition-colors">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path
+                                    d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-primary transition-colors">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-primary transition-colors">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-primary transition-colors">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path
+                                    d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                                </path>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Operations -->
+                <div>
+                    <h4 class="font-display font-semibold text-white mb-6 uppercase tracking-wider text-sm">Operations
+                    </h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3 text-gray-400 text-sm">
+                            <span class="text-primary mt-0.5"><svg class="w-4 h-4" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                    </path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg></span>
+                            525 N Tryon Street, Suite 1600<br />Charlotte, NC, USA
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-400 text-sm">
+                            <span class="text-primary"><svg class="w-4 h-4" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                                    </path>
+                                </svg></span>
+                            +1 980 446 0471
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-400 text-sm">
+                            <span class="text-primary"><svg class="w-4 h-4" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                    </path>
+                                </svg></span>
+                            <a href="mailto:admin@zyrecconstructions.com"
+                                class="hover:text-primary transition-colors">admin@zyrecconstructions.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Navigation -->
+                <div>
+                    <h4 class="font-display font-semibold text-white mb-6 uppercase tracking-wider text-sm">Sitemap</h4>
+                    <ul class="space-y-3">
+                        <li><a href="../about/"
+                                class="text-sm text-gray-400 hover:text-primary transition-colors">Company Story</a>
+                        </li>
+                        <li><a href="../services/"
+                                class="text-sm text-gray-400 hover:text-primary transition-colors">Expertise &
+                                Services</a></li>
+                        <li><a href="../projects/"
+                                class="text-sm text-gray-400 hover:text-primary transition-colors">Project Portfolio</a>
+                        </li>
+                        <li><a href="../news/" class="text-sm text-gray-400 hover:text-primary transition-colors">News &
+                                Insights</a></li>
+                        <li><a href="../faq/" class="text-sm text-gray-400 hover:text-primary transition-colors">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="contact-details">
-                <img src="../images/location-icon.png" loading="lazy"  width="30" height="30" alt="Location Icon">
-                <p>525 N Tryon Street, Suite 1600, Charlotte, NC, USA.</p>
-            </div>
-             <div class="contact-details">
-                <img src="../images/footer-clock-icon.png" loading="lazy"  width="30" height="30" alt="Clock Icon">
-                <p>9 AM - 5 PM</p>
+
+            <!-- Copyright -->
+            <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-xs font-light text-gray-500 tracking-wide">&copy; 2026 Zyrec Constructions. Founded on
+                    precision.</p>
+                <div class="flex gap-4 text-xs font-light text-gray-500">
+                    <a href="#" class="hover:text-white transition-colors">Privacy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms</a>
+                </div>
             </div>
         </div>
-            <div class="quick-links">
-                <h4>Quick Links</h4>
-                <ul>
-               <li><a href="../about/"><img src="../images/check-mark-icon.png" loading="lazy"  width="18" height="18"  alt="Check Mark Icon">About Us</a></li> 
-                <li><a href="../services/"><img src="../images/check-mark-icon.png" loading="lazy"  width="18" height="18"  alt="Check Mark Icon">Services</a></li> 
-                <li><a href="../contact/"><img src="../images/check-mark-icon.png" loading="lazy"  width="18" height="18"  alt="Check Mark Icon">Contact Us</a></li> 
-                <li><a href="../faq/"><img src="../images/check-mark-icon.png" loading="lazy"  width="18" height="18"  alt="Check Mark Icon">FAQ</a></li> 
-                <li><a href="../projects/"><img src="../images/check-mark-icon.png" loading="lazy"  width="18" height="18"  alt="Check Mark Icon">Projects</a></li> 
-                <li><a href="../news/"><img src="../images/check-mark-icon.png" loading="lazy"  width="18" height="18"  alt="Check Mark Icon">News</a></li> 
-            </ul>
-            </div>
-        <div class="brief">
-            <h4>Brief About Us</h4>
-            <p>
-                Zyrec Construction Company has been delivering trusted building solutions since 1989, serving residential, commercial, and industrial sectors. Co-owned by industry experts Nathan Hegseth and Michael Zhen Yang, Zyrec is built on a legacy of excellence, precision, and innovation.
-            </p>
-            <a href="../about/" class="know-more-button">Know More</a>
+
+        <!-- Scroll to Top -->
+        <div class="fixed bottom-6 right-6 md:bottom-8 md:right-8 z-[60]" id="scroll-to-top" style="display: none;">
+            <a href="#top"
+                class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-2xl hover:bg-primary transition-colors group">
+                <svg class="w-5 h-5 text-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path>
+                </svg>
+            </a>
         </div>
-    </div>
-    
-    <hr>
-   <div class="copyright-and-socials">
-    <div class="social-icons">
-        <img src="../images/twitter.png" loading="lazy"  width="16" height="16" alt="twitter icon">
-        <img src="../images/facebook.png" loading="lazy"  width="16" height="16" alt="facebook icon">
-        <img src="../images/instagram.png" loading="lazy"  width="16" height="16" alt="instagram icon">
-        <img src="../images/youtube.png" loading="lazy"  width="16" height="16" alt="youtube icon">
-        <img src="../images/skype-icon.png" loading="lazy"  width="16" height="16" alt="wordpress icon">
-    </div>
-    <p>&copy Zyrec Constructions 2025 - All rights reserved</p>
-    </div>
-    <div class="upward-icon">
-        <a href="#top"><img src="../images/upward-arrow-icon.png" loading="lazy"  width="45" height="45" alt="upward-icon"></a>
-    </div>
-    
-</footer>
-
-
+    </footer>
 </body>
+
 </html>

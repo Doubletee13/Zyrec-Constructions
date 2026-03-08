@@ -1,243 +1,489 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-     <meta charset="UTF-8" />
-     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <meta
-        name="description"
-        content="Zyrec Constructions provides innovative and reliable building solutions, specializing in infrastructure for urban and remote developments."
-    />
-    <meta
-      name="keywords"
-      content="construction, infrastructure, building, civil engineering, urban development, remote projects, Zyrec"
-    />
-    <meta name="author" content="Zyrec Constructions" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="format-detection" content="telephone=no">
-    <title>Zyrec Constructions</title>
-    <link rel="stylesheet" href="../css/about.css" />
-    <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
-    <script src="../script.js" defer ></script>
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Learn about Zyrec Constructions, our history, co-founders, and commitment to engineering excellence and sustainable infrastructure." />
+    <title>About Us | Zyrec Constructions</title>
+    <!-- Tailwind compiled CSS -->
+    <link rel="stylesheet" href="../css/tailwind-output.css" />
+    <link rel="icon" href="../images/favicon_z.png" type="image/png">
+    <!-- Fonts: Inter (Body) & Outfit (Headings) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;800;900&display=swap"
+        rel="stylesheet">
+    <script src="../script.js" defer></script>
 </head>
-<body id="top">
-    <header>
-    <section class="header-info">
-        <a href="../" class="header-logo-link">
-        <div class="header-logo">
-            <img src="../images/Zyrec_logo.png" loading="lazy"  width="100" height="100" alt="Zyrec logo">
-            <h1>ZYREC CONSTRUCTION <span class="yellow-text">COMPANY</span></h1>
-        </div>
-        </a>
-        <div class="header-contact">
-            <div class="header-contact-info">
-            <h2>+1 980 446 0471</h2>
-            <p>Have You Any Enquiries</p>
-            </div>
-            <div>
-                <a href="../contact/" class="get-a-quote">Get A Qoute</a>
-            </div>
-        </div>
-    </section>
-    <nav>
-            <ul>
-                <li><a href="../">HOME</a></li>
-                <li><a href="../about/">ABOUT</a></li>
-                <li><a href="../services/">SERVICES</a></li>
-                <li><a href="../projects/">PROJECTS</a></li>
-                <li><a href="../faq/">FAQ</a></li>
-                <li><a href="../contact/">CONTACT</a></li>
-                <li><a href="../news/">NEWS</a></li>
-            </ul>
-            <button class="hamburger" id="hamburger-menu" aria-label="Menu">
-  &#9776;
-</button>
 
+<body id="top" class="font-sans text-gray bg-light antialiased selection:bg-primary selection:text-dark">
+    <!-- Header / Navbar -->
+    <header
+        class="w-full bg-dark backdrop-blur-md shadow-sm z-50 transition-all duration-300 fixed border-b border-white/10"
+        id="main-header" style="position: sticky; top: 0;">
+        <nav class="max-w-[90rem] mx-auto py-5 px-6 md:px-12 flex justify-between items-center w-full" id="main-nav">
+            <!-- Logo -->
+            <a href="../" class="flex items-center gap-3 group">
+                <div
+                    class="w-8 h-8 md:w-10 md:h-10 bg-primary rounded-full flex items-center justify-center transition-transform group-hover:scale-110 duration-300">
+                    <span class="text-dark font-display font-black text-base md:text-lg">Z</span>
+                </div>
+                <h1 class="text-xl md:text-2xl font-display font-black text-white tracking-tight">
+                    ZYREC.
+                </h1>
+            </a>
+
+            <!-- Desktop Menu -->
+            <ul class="hidden lg:flex gap-8 items-center text-sm font-semibold tracking-wide uppercase">
+                <li><a href="../" class="text-white hover:text-primary transition-colors py-1 relative group">HOME<span
+                            class="absolute left-0 -bottom-1 w-full h-[2px] bg-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span></a>
+                </li>
+                <li><a href="../about/" class="text-primary transition-colors py-1 relative">ABOUT</a>
+                </li>
+                <li><a href="../services/"
+                        class="text-white hover:text-primary transition-colors py-1 relative group">SERVICES<span
+                            class="absolute left-0 -bottom-1 w-full h-[2px] bg-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span></a>
+                </li>
+                <li><a href="../projects/"
+                        class="text-white hover:text-primary transition-colors py-1 relative group">PROJECTS<span
+                            class="absolute left-0 -bottom-1 w-full h-[2px] bg-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span></a>
+                </li>
+                <li><a href="../faq/"
+                        class="text-white hover:text-primary transition-colors py-1 relative group">FAQ<span
+                            class="absolute left-0 -bottom-1 w-full h-[2px] bg-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span></a>
+                </li>
+                <li><a href="../news/"
+                        class="text-white hover:text-primary transition-colors py-1 relative group">NEWS<span
+                            class="absolute left-0 -bottom-1 w-full h-[2px] bg-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span></a>
+                </li>
+                <li><a href="../contact/"
+                        class="text-white hover:text-primary transition-colors py-1 relative group">CONTACT<span
+                            class="absolute left-0 -bottom-1 w-full h-[2px] bg-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span></a>
+                </li>
+            </ul>
+
+            <!-- CTA Button -->
+            <div class="hidden lg:flex items-center gap-6">
+                <a href="../contact/"
+                    class="bg-primary text-dark font-semibold text-sm px-8 py-3 rounded-full hover:bg-white transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5">Get
+                    A Quote</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="lg:hidden relative w-8 h-6 text-white hover:text-primary transition-colors focus:outline-none"
+                id="hamburger-menu" aria-label="Menu">
+                <span class="hamburger-line top-line"></span>
+                <span class="hamburger-line middle-line"></span>
+                <span class="hamburger-line bottom-line"></span>
+            </button>
+
+            <!-- Mobile Dropdown -->
+            <ul id="mobile-menu"
+                class="hidden flex-col items-center gap-6 mt-6 bg-white shadow-2xl absolute top-full left-0 w-full p-8 lg:hidden border-t border-gray-100">
+                <li><a href="../"
+                        class="hover:text-primary text-dark transition-colors font-display font-bold text-2xl">HOME</a>
+                </li>
+                <li><a href="../about/"
+                        class="hover:text-primary text-primary transition-colors font-display font-bold text-2xl">ABOUT</a>
+                </li>
+                <li><a href="../services/"
+                        class="hover:text-primary text-dark transition-colors font-display font-bold text-2xl">SERVICES</a>
+                </li>
+                <li><a href="../projects/"
+                        class="hover:text-primary text-dark transition-colors font-display font-bold text-2xl">PROJECTS</a>
+                </li>
+                <li><a href="../faq/"
+                        class="hover:text-primary text-dark transition-colors font-display font-bold text-2xl">FAQ</a>
+                </li>
+                <li><a href="../news/"
+                        class="hover:text-primary text-dark transition-colors font-display font-bold text-2xl">NEWS</a>
+                </li>
+                
+                <li><a href="../contact/" class="hover:text-primary text-dark transition-colors font-display font-bold text-2xl">CONTACT</a></li>
+                <li><a href="../contact/"
+                        class="mt-4 bg-primary text-dark font-bold px-10 py-4 rounded-full w-full text-center hover:bg-dark hover:text-white transition-colors">GET
+                        A QUOTE</a></li>
+            </ul>
         </nav>
     </header>
+
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h2>ZYREC CONSTRUCTIONS</h2>
-                <p>Building with Precision, Powered by Trust.</p>
+        <!-- Typographic Hero -->
+        <section class="min-h-[50vh] bg-dark flex flex-col justify-center items-center text-center px-6 relative overflow-hidden border-b border-primary/20">
+            <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#FBBF24 1px, transparent 1px); background-size: 30px 30px;"></div>
+            <div class="relative z-10 max-w-4xl mt-12">
+                <span class="inline-block py-1 px-3 rounded-full bg-primary/20 text-primary font-semibold tracking-widest text-sm uppercase mb-4 animate-fade-in-up">Corporate History</span>
+                <h1 class="text-5xl md:text-7xl font-display font-black text-white tracking-tight mb-6 animate-fade-in-up" style="animation-delay: 100ms;">
+                    The <span class="text-primary italic">Foundation.</span>
+                </h1>
+                <p class="text-lg md:text-xl text-white leading-relaxed font-light max-w-2xl mx-auto animate-fade-in-up" style="animation-delay: 200ms;">
+                    Built on a legacy of excellence, precision, and relentless innovation since 1989.
+                </p>
             </div>
         </section>
-        
-<section class="about">
-        <h2>About Us</h2>
-        <p>
-         <strong>Zyrec Construction Company</strong> is a professional construction firm dedicated to delivering high-quality building solutions across residential, commercial, and industrial sectors. The company started December 1989 and its subsidiary as been co-owned by two persons. Known for its commitment to excellence, Zyrec leverages innovative techniques, sustainable practices, and efficient project management to provide top-notch construction services tailored to meet clients' unique needs.
-        </p>
-        <figure class="ceo">
-          <img
-            src="../images/new_co_founder_image.jpeg"
-            width="1080"
-            height="795"
-            loading="lazy"
-            alt="Co-Founders Together"
-            loading="lazy" 
-          />
-          <figcaption>
-            Co owner Nathan Hegseth and Michael Zhen Yang - <span class="yellow-text"><em>Zyrec Constructions</em></span>
-          </figcaption>
-        </figure>
 
-        <h3>Key Areas Of Expertise</h3>
-        <ul>
-            <li><strong>Residential Construction</strong>:Zyrec specializes in building custom homes, multi-family units, and luxury residences. With an eye for design and a focus on durability, Zyrec collaborates closely with homeowners to turn their visions into reality.</li>
-            <li><strong>Commercial Projects</strong>:From office buildings to retail spaces and hospitality venues, Zyrec ensures functional, aesthetic, and sustainable construction. The company's experience in commercial construction guarantees a seamless process that minimizes disruptions to business operations while delivering spaces designed to impress.</li>
-            <li><strong>Industrial Construction</strong>:Zyrec is experienced in developing industrial facilities like warehouses, factories, and logistics centers. The team understands the complexities of industrial construction, ensuring that each project meets regulatory standards and is designed for optimal productivity.</li>
-        </ul>
-        <h3>Why Choose Zyrec Construction Company</h3>
-        <ul>
-            <li><strong>Quality Assurance</strong>:Every project is handled with precision, ensuring structural integrity and adherence to quality standards.</li>
-            <li><strong>Client-Centric Approach</strong>:Zyrec prides itself on transparency and open communication, working with clients at each project phase to ensure their expectations are met.</li>
-            <li><strong>Sustainability Focus</strong>:Committed to eco-friendly construction, Zyrec incorporates sustainable materials and practices, helping reduce environmental impact.</li>
-            <li><strong>Safety Standards</strong>:Safety is paramount in all Zyrec projects. The company adheres to stringent safety protocols to protect workers and clients, maintaining a zero-incident policy on every site.</li>
-        </ul>
-        <p>With a reputation for excellence and reliability, Zyrec Construction Company is dedicated to transforming ideas into structures that stand the test of time, making it a trusted partner for all construction needs.</p>
-      <h3>Mission Statement</h3>
-      <p>At Zyrec Construction Company, our mission is to deliver exceptional construction solutions that embody quality, innovation, and sustainability. We are committed to building lasting relationships with our clients through transparent communication, integrity, and a client-centric approach. By fostering a culture of safety and environmental responsibility, we strive to create structures that not only meet the needs of today but also contribute positively to future generations.</p>
-        <h3>Vision Statement</h3>
-        <p>Our vision is to be a leader in the construction industry, recognized for our commitment to excellence, sustainability, and social responsibility. We aim to redefine industry standards by integrating advanced construction techniques and eco-friendly practices across all our projects. By continuously enhancing our expertise and fostering innovation, we aspire to build a better, more sustainable world, one project at a time.</p>
-    </section>
-      <hr />
-      <section class="co-founders">
-        <h3>CO OWNERS</h3>
-        <div class="founders">
-            <figure>
-                <img src="../images/updated_photo_of_co-founder_mike.jpeg" loading="lazy"  width="960" height="1280" alt="">
-                <figcaption><p>Nathan Hegseth - <span class="yellow-text figcaption">Co-owner, <em>Zyrec Constructions</em>.</span></p>
-               <details>
-                <summary>About Nathan Hegseth</summary>
-<p><strong>Nathan Hegseth</strong> is an accomplished Construction Engineer with extensive experience in general constructions and industrial projects. Over the course of his career, he has developed a reputation for combining technical precision with innovative problem-solving, ensuring that every project meets the highest standards of safety, quality, and efficiency.</p>
+        <!-- Company Overview -->
+        <section class="py-24 px-6 bg-white relative">
+            <div class="max-w-[70rem] mx-auto">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-display font-black text-dark mb-6 tracking-tight">
+                            Redefining standards <br />in construction.</h2>
+                        <p class="text-gray leading-relaxed font-light text-lg mb-6">
+                            <strong class="font-semibold text-dark">Zyrec Construction Company</strong> is a
+                            professional construction firm dedicated to delivering high-quality building solutions
+                            across residential, commercial, and industrial sectors. Established in December 1989, the
+                            company is known for its commitment to excellence. We leverage innovative techniques,
+                            sustainable practices, and highly efficient project management to provide top-notch
+                            construction services tailored to meet our clients' unique scale and constraints.
+                        </p>
+                        <div class="grid grid-cols-2 gap-8 mt-10 border-t border-gray-100 pt-8">
+                            <div>
+                                <h4 class="font-display font-bold text-dark text-xl mb-2 tracking-tight">Quality
+                                    Assurance</h4>
+                                <p class="text-sm text-gray font-light">Every project handled with absolute precision
+                                    and structural integrity.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-display font-bold text-dark text-xl mb-2 tracking-tight">Zero Incident
+                                </h4>
+                                <p class="text-sm text-gray font-light">Adhering to stringent safety protocols to
+                                    protect our people and clients.</p>
+                            </div>
+                        </div>
+                    </div>
 
-<p>Nathan has contributed to the successful completion of projects across multiple sectors, including offshore drilling platforms, pipelines, refineries, and compressor stations. His expertise spans all stages of the construction lifecycle from feasibility studies and cost estimation to site supervision and project delivery.</p>
+                    <div class="relative group">
+                        <div
+                            class="absolute inset-0 bg-primary/20 transform translate-x-4 -translate-y-4 rounded-3xl z-0 transition-transform group-hover:translate-x-6 group-hover:-translate-y-6 duration-500">
+                        </div>
+                        <img src="../images/new_co_founder_image.jpeg"
+                            class="w-full h-auto rounded-3xl relative z-10 shadow-xl transition-all duration-700"
+                            alt="Co-Founders Together">
+                        <div class="absolute -bottom-6 -left-6 bg-dark text-white p-6 rounded-2xl shadow-xl z-20 w-64">
+                            <p class="text-sm font-light text-gray-300 mb-1">Co-Founders</p>
+                            <p class="font-display font-bold leading-tight">Nathan Hegseth & <br />Michael Zhen Yang</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<p>Nathan is known for his leadership on multidisciplinary teams, his ability to coordinate seamlessly between engineers, contractors, and clients, and his commitment to sustainable construction practices.</p>
+        <!-- Vision & Mission -->
+        <section class="py-24 bg-dark text-white relative overflow-hidden">
+            <!-- Abstract Texture -->
+            <div class="absolute inset-0 opacity-[0.03]"
+                style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 30px 30px;">
+            </div>
 
-<p>Dedicated to continuous improvement, Nathan stays current with evolving industry standards and innovations in construction materials, safety protocols, and environmental compliance. His approach emphasizes precision, collaboration, and integrity, qualities that have earned him respect from colleagues and clients alike.</p>
+            <div class="max-w-[70rem] mx-auto px-6 relative z-10">
+                <div class="grid md:grid-cols-2 gap-16">
+                    <div
+                        class="p-10 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors duration-300">
+                        <div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center mb-8">
+                            <svg class="w-6 h-6 text-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-display font-bold mb-4 tracking-tight">Our Mission</h3>
+                        <p class="text-gray-400 font-light leading-relaxed">
+                            To deliver exceptional construction solutions embodying quality, innovation, and
+                            sustainability. We are committed to building lasting relationships through transparency and
+                            an uncompromising client-centric approach, striving to create structures that contribute
+                            positively to future generations.
+                        </p>
+                    </div>
 
-<p>A serial entrepreneur and philanthropic leader, he has redefined what infrastructure means in the 21st century. As the Co-Founder and Chief Executive Officer of Zyrec Constructions, Nathan leads a top-tier construction engineering firm with core operations across the United States, the United Kingdom, and Australia.</p>
+                    <div
+                        class="p-10 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors duration-300">
+                        <div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center mb-8">
+                            <svg class="w-6 h-6 text-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-display font-bold mb-4 tracking-tight">Our Vision</h3>
+                        <p class="text-gray-400 font-light leading-relaxed">
+                            To be the vanguard of the construction industry, continuously redefining global standards by
+                            integrating highly advanced parametric construction techniques and eco-friendly practices
+                            across all our projects worldwide.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<p>Born in 1961 in the quiet forests of Östersund, Sweden, Nathan was raised in a modest household that prized integrity, resilience, humility, and community service. He developed an early fascination with systems, spending his youth exploring the mechanics of Construction Engineering, Production Engineering, and Drilling Engineering an early passion that evolved into a deep commitment to engineering excellence.</p>
+        <!-- Key Personnel -->
+        <section class="py-32 bg-light">
+            <div class="max-w-[70rem] mx-auto px-6">
+                <!-- Header -->
+                <div class="text-center mb-24">
+                    <span class="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">Leadership</span>
+                    <h2 class="text-4xl md:text-5xl font-display font-black text-dark tracking-tight leading-tight">
+                        Driven by visionaries.</h2>
+                </div>
 
-<p>At college age, Nathan relocated to the United Kingdom to broaden his academic and cultural horizons. He earned his Bachelor of Engineering in Electrical & Instrumentation from the University of Bristol, where he distinguished himself both academically and through hands-on project involvement. During his time in England, he also met his late wife, with whom he shared a strong partnership rooted in mutual support and shared values.</p>
+                <div class="space-y-24">
+                    <!-- Nathan -->
+                    <div class="grid lg:grid-cols-12 gap-12 items-start">
+                        <div class="lg:col-span-5 relative group">
+                            <div
+                                class="absolute inset-0 bg-primary/10 rounded-3xl transform -translate-x-3 translate-y-3 z-0">
+                            </div>
+                            <img src="../images/updated_photo_of_co-founder_nathan.jpeg"
+                                class="w-full aspect-[4/5] object-cover rounded-3xl relative z-10 shadow-lg transition-all duration-700"
+                                alt="Nathan Hegseth">
+                        </div>
+                        <div class="lg:col-span-7 pt-4">
+                            <p class="text-sm font-bold text-primary uppercase tracking-widest mb-2">Co-owner, Zyrec
+                                Constructions</p>
+                            <h3 class="text-3xl font-display font-black text-dark tracking-tight mb-6">Nathan Hegseth
+                            </h3>
+                            <div class="prose prose-lg text-gray font-light max-w-none prose-p:leading-relaxed">
+                                <p>An accomplished Construction Engineer with extensive experience in general
+                                    constructions and industrial projects. Over his career, he has developed a
+                                    reputation for combining technical precision with innovative problem-solving.</p>
+                                <p>Driven by clarity of purpose and discipline in execution, Nathan spans the lifecycle
+                                    from feasibility and cost estimation to site supervision, specializing in pipelines,
+                                    refineries, and complex commercial hubs.</p>
+                                <details
+                                    class="mt-6 group cursor-pointer border border-gray-200 rounded-2xl bg-white p-6 shadow-sm hover:shadow-md transition-shadow">
+                                    <summary
+                                        class="font-semibold text-dark text-lg list-none flex justify-between items-center outline-none">
+                                        Read Full Biography
+                                        <span
+                                            class="w-8 h-8 rounded-full bg-light flex items-center justify-center group-open:rotate-180 transition-transform">
+                                            <svg class="w-4 h-4 text-dark" fill="none" stroke="currentColor"
+                                                viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M19 9l-7 7-7-7"></path>
+                                            </svg>
+                                        </span>
+                                    </summary>
+                                    <div class="mt-6 pt-6 border-t border-gray-100 space-y-4 text-base">
+                                        <p>Nathan has contributed to the successful completion of projects across
+                                            multiple sectors, including offshore drilling platforms, pipelines,
+                                            refineries, and compressor stations. His expertise spans all stages of the
+                                            construction lifecycle.</p>
+                                        <p>Born in 1961 in the quiet forests of Östersund, Sweden, Nathan was raised in
+                                            a modest household that prized integrity, resilience, humility, and
+                                            community service. He developed an early fascination with systems, spending
+                                            his youth exploring the mechanics of Construction Engineering.</p>
+                                        <p>At college age, Nathan relocated to the United Kingdom to broaden his
+                                            academic horizons. He earned his Bachelor of Engineering in Electrical &
+                                            Instrumentation from the University of Bristol. In 2015, Nathan began
+                                            hosting charitable galas to fund autism awareness programs.</p>
+                                        <blockquote
+                                            class="italic font-medium text-dark border-l-4 border-primary pl-4 mt-4">
+                                            “One day, I hope to sit again on a mound of dirt, this time with my
+                                            grandchildren. We'll look up at the stars. But we will remember the ones we
+                                            have loved. That is the kind of legacy I want to build.”
+                                        </blockquote>
+                                    </div>
+                                </details>
+                            </div>
+                        </div>
+                    </div>
 
-<p>This chapter of his life embedded in him the entrepreneurial resilience that would later guide Zyrec Construction's multinational expansion.</p>
-
-<p>With more than three decades of hands-on leadership, Nathan has overseen major construction and drilling projects around the world.</p>
-
-<p>Nathan's leadership reflects the same principles that guided his upbringing: clarity of purpose, discipline in execution, and an unrelenting focus on people. He is a mentor, keynote speaker, and industry advocate.</p>
-
-<p>In 2015, Nathan began hosting charitable galas to fund autism awareness programs, inspired by a neighbor's child. His efforts have since expanded across causes related to education, mental health, and family services.</p>
-
-<p>For Nathan, building infrastructure is only one part of the mission. The other is building lives, futures, and dignity.</p>
-
-<h4>Personal Life & Legacy</h4>
-
-<p>A family man at heart, Nathan lives by the same values that launched his career: humility, wonder, and legacy. He often says that the best structures are not made of steel or concrete, but of love, memory, and shared purpose.</p>
-
-<p><strong>“One day, I hope to sit again on a mound of dirt, this time with my grandchildren. We'll look up at the stars. Maybe we'll see a comet, maybe we won't. But we will remember the ones we have loved. That is the kind of legacy I want to build.”</strong></p>
-
-
-                </details>
-                </figcaption>
-            </figure>
-             <figure>
-                <img src="../images/updated_photo_of_co-founder_nathan.jpeg" width="718" height="673" alt="">
-                <figcaption><p>Michael Zhen Yang - <span class="yellow-text figcaption">Co-owner, <em>Zyrec Constructions</em>.</span></p>
-                <details>
-                    <summary>About Michael Zhen Yang</summary>
-                   <p><strong>Michael Zhen Yang</strong> is a globally recognized energy infrastructure leader, renowned for his expertise in offshore drilling, pipeline systems, refinery development, and integrated gas logistics. As the Majority Shareholder and Chief Executive Officer of Zyrec Constructions, he commands one of the most influential oil and gas infrastructure companies of the 21st century. Operating across four continents including North America, Southeast Asia, West Africa, and the Middle East, Zyrec thrives under his uncompromising vision of sustainable innovation and engineering excellence.</p>
-
-<p>For Michael, the mission goes beyond steel and soil. It's about energy as a force of dignity fueling economies, lighting homes, and empowering the underserved.</p>
-
-<p>Born on December 29, 1968, in Singapore, Michael was raised in a dynamic cultural crossroads where ambition met structure. His early life was steeped in both the discipline of mathematics and the improvisation of commerce, fostered by a family that valued grit, purpose, and global thinking. He spent countless hours as a young man poring over engineering blueprints and business periodicals an obsession that would later inform his unique synthesis of technical mastery and commercial strategy.</p>
-
-<p>In his early twenties, Michael made the bold move to the United States to deepen both his education and worldview. He earned his degree in Civil Engineering from the University of Southern California and later an MBA from The Wharton School of the University of Pennsylvania. These formative years shaped his leadership style — analytical, mission-driven, and relentlessly future-focused.</p>
-
-<p>After working with major oil and gas contractors on some of the world's most demanding pipeline and platform projects, Michael founded Zyrec Constructions in 2010. What began as a regional firm soon grew into a global force designing offshore drilling rigs, laying high capacity pipelines, constructing modern refineries, and building gas compressor stations that anchor national energy networks.</p>
-
-<p>Today, Michael holds a 68% equity stake in Zyrec, making him both a strategic architect and fiscal steward of its global expansion. But his leadership is about more than numbers it reflects a deep-seated philosophy: execute with excellence, lead with humility, and build with purpose.</p>
-
-<p>A pioneer of innovation in an industry often resistant to change, Michael has championed digital construction technologies and environmental responsibility. Under his leadership, Zyrec has invested heavily in carbon reduction methods and sustainable fuel distribution systems bridging the gap between old world engineering and a greener tomorrow.</p>
-
-<p>Yet Michael's vision reaches even further. Through the Zhen Foundation  named in honor of his maternal grandfather he supports engineering education, scholarships for underrepresented youth, and global research into renewable integration. His philanthropic footprint mirrors his professional one: deliberate, far reaching, and focused on legacy.</p>
-
-<h4>Personal Life & Legacy</h4>
-
-<p>Now a proud U.S. citizen, Michael resides in Charlotte, North Carolina, with his wife and daughter. He remains a mentor to rising entrepreneurs and a respected voice in global energy forums. But at his core, Michael lives by a simple belief: true infrastructure is not just what we build beneath our feet it's what we build between our hearts.</p>
-
-<p><strong>“I don't just want to leave pipelines and towers behind. I want to leave courage, inclusion, and light. A refinery fades; a lifted life endures.”</strong></p>
-
-                </details>
-                </figcaption>
-            </figure>
-        </div>
-      </section>
-      <section class="company-logo">
-        <figure>
-        <img src="../images/Zyrec_logo.png" loading="lazy"  width="500" height="500" alt="">
-        </figure>
-      </section>
+                    <!-- Michael -->
+                    <div class="grid lg:grid-cols-12 gap-12 items-start mt-12">
+                        <div class="lg:col-span-5 lg:order-2 relative group">
+                            <div
+                                class="absolute inset-0 bg-primary/10 rounded-3xl transform translate-x-3 translate-y-3 z-0">
+                            </div>
+                            <img src="../images/updated_photo_of_co-founder_mike.jpeg"
+                                class="w-full aspect-[4/5] object-cover rounded-3xl relative z-10 shadow-lg transition-all duration-700"
+                                alt="Michael Zhen Yang">
+                        </div>
+                        <div class="lg:col-span-7 lg:order-1 pt-4 text-left">
+                            <p class="text-sm font-bold text-primary uppercase tracking-widest mb-2">Co-owner, Zyrec
+                                Constructions</p>
+                            <h3 class="text-3xl font-display font-black text-dark tracking-tight mb-6">Michael Zhen Yang
+                            </h3>
+                            <div class="prose prose-lg text-gray font-light max-w-none prose-p:leading-relaxed">
+                                <p>A globally recognized infrastructure leader, renowned for his expertise in offshore
+                                    drilling, heavy transportation logistics, and integrated gas logistics. Michael
+                                    thrives under his uncompromising vision of sustainable innovation.</p>
+                                <p>A pioneer of innovation in an industry often resistant to change, Michael has
+                                    championed digital construction technologies and parametric modeling, making Zyrec a
+                                    modernized technological force.</p>
+                                <details
+                                    class="mt-6 group cursor-pointer border border-gray-200 rounded-2xl bg-white p-6 shadow-sm hover:shadow-md transition-shadow">
+                                    <summary
+                                        class="font-semibold text-dark text-lg list-none flex justify-between items-center outline-none">
+                                        Read Full Biography
+                                        <span
+                                            class="w-8 h-8 rounded-full bg-light flex items-center justify-center group-open:rotate-180 transition-transform">
+                                            <svg class="w-4 h-4 text-dark" fill="none" stroke="currentColor"
+                                                viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M19 9l-7 7-7-7"></path>
+                                            </svg>
+                                        </span>
+                                    </summary>
+                                    <div class="mt-6 pt-6 border-t border-gray-100 space-y-4 text-base">
+                                        <p>Born on December 29, 1968, in Singapore, Michael was raised in a dynamic
+                                            cultural crossroads where ambition met structure. His early life was steeped
+                                            in both the discipline of mathematics and the improvisation of commerce.</p>
+                                        <p>In his early twenties, Michael made the bold move to the United States. He
+                                            earned his degree in Civil Engineering from the University of Southern
+                                            California and later an MBA from The Wharton School. These formative years
+                                            shaped his leadership style — analytical, mission-driven, and relentlessly
+                                            future-focused.</p>
+                                        <p>Through the Zhen Foundation, he supports engineering education, scholarships
+                                            for underrepresented youth, and global research into renewable integration.
+                                        </p>
+                                        <blockquote
+                                            class="italic font-medium text-dark border-l-4 border-primary pl-4 mt-4">
+                                            “I don't just want to leave pipelines and towers behind. I want to leave
+                                            courage, inclusion, and light. A refinery fades; a lifted life endures.”
+                                        </blockquote>
+                                    </div>
+                                </details>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
-<footer>
-    <div class="footer-details">
-        <div class="contact">
-            <h4>Quick Contact</h4>
-            <div class="contact-details">
-                <img src="../images/phone-icon.png" loading="lazy"  width="30" height="30" alt="Phone Icon">
-                <p>+1 980 446 0471</p>
-            </div>
-            <div class="contact-details">
-                <img src="../images/email-icon.png" loading="lazy"  width="30" height="30" alt="Email Icon">
-                <p>admin@zyrecconstructions.com</p>
-            </div>
-            <div class="contact-details">
-                <img src="../images/location-icon.png" loading="lazy"  width="30" height="30" alt="Location Icon">
-                <p>525 N Tryon Street, Suite 1600, Charlotte, NC, USA.</p>
-            </div>
-             <div class="contact-details">
-                <img src="../images/footer-clock-icon.png" loading="lazy"  width="30" height="30" alt="Clock Icon">
-                <p>9 AM - 5 PM</p>
-            </div>
-        </div>
-            <div class="quick-links">
-                <h4>Quick Links</h4>
-                <ul>
-               <li><a href="../about/"><img src="../images/check-mark-icon.png" loading="lazy"  width="18" height="18"  alt="Check Mark Icon">About Us</a></li> 
-                <li><a href="../services/"><img src="../images/check-mark-icon.png" loading="lazy"  width="18" height="18"  alt="Check Mark Icon">Services</a></li> 
-                <li><a href="../contact/"><img src="../images/check-mark-icon.png" loading="lazy"  width="18" height="18"  alt="Check Mark Icon">Contact Us</a></li> 
-                <li><a href="../faq/"><img src="../images/check-mark-icon.png" loading="lazy"  width="18" height="18"  alt="Check Mark Icon">FAQ</a></li> 
-                <li><a href="../projects/"><img src="../images/check-mark-icon.png" loading="lazy"  width="18" height="18"  alt="Check Mark Icon">Projects</a></li> 
-                <li><a href="../news/"><img src="../images/check-mark-icon.png" loading="lazy"  width="18" height="18"  alt="Check Mark Icon">News</a></li> 
-            </ul>
-            </div>
-        <div class="brief">
-            <h4>Brief About Us</h4>
-            <p>
-                Zyrec Construction Company has been delivering trusted building solutions since 1989, serving residential, commercial, and industrial sectors. Co-owned by industry experts Nathan Hegseth and Michael Zhen Yang, Zyrec is built on a legacy of excellence, precision, and innovation.
-            </p>
-            <a href="../about/" class="know-more-button">Know More</a>
-        </div>
-    </div>
-    <hr>
-   <div class="copyright-and-socials">
-    <div class="social-icons">
-        <img src="../images/twitter.png" loading="lazy"  width="16" height="16" alt="twitter icon">
-        <img src="../images/facebook.png" loading="lazy"  width="16" height="16" alt="facebook icon">
-        <img src="../images/instagram.png" loading="lazy"  width="16" height="16" alt="instagram icon">
-        <img src="../images/youtube.png" loading="lazy"  width="16" height="16" alt="youtube icon">
-        <img src="../images/skype-icon.png" loading="lazy"  width="16" height="16" alt="wordpress icon">
-    </div>
-    <p>&copy Zyrec Constructions 2025 - All rights reserved</p>
-    </div>
-    <div class="upward-icon">
-        <a href="#top"><img src="../images/upward-arrow-icon.png" loading="lazy"  width="45" height="45" alt="upward-icon"></a>
-    </div>
-</footer>
 
+    <!-- Modern Minimal Footer -->
+    <footer class="bg-dark text-white pt-24 pb-12 border-t border-white/5">
+        <div class="max-w-[90rem] mx-auto px-6">
+            <!-- Footer Top CTA -->
+            <div
+                class="flex flex-col md:flex-row justify-between items-center mb-24 pb-12 border-b border-white/10 gap-8">
+                <h2 class="text-4xl md:text-5xl font-display font-black tracking-tight">Ready to build?</h2>
+                <a href="../contact/"
+                    class="bg-primary text-dark font-semibold px-10 py-5 rounded-full hover:bg-white transition-colors duration-300">Start
+                    a Project</a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-24">
+                <!-- Brand -->
+                <div class="lg:col-span-1">
+                    <a href="../" class="flex items-center gap-3 mb-6">
+                        <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+                            <span class="text-dark font-display font-black text-sm">Z</span>
+                        </div>
+                        <h2 class="text-xl font-display font-black tracking-tight">ZYREC.</h2>
+                    </a>
+                    <p class="text-gray-400 font-light text-sm leading-relaxed mb-8">
+                        Global leaders in precision engineering and future-ready infrastructure development.
+                    </p>
+
+                    <!-- SVG Social Links -->
+                    <div class="flex gap-4">
+                        <a href="#" class="text-gray-500 hover:text-primary transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-primary transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-primary transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Operations -->
+                <div>
+                    <h4 class="font-display font-semibold text-white mb-6 uppercase tracking-wider text-sm">Operations
+                    </h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3 text-gray-400 text-sm">
+                            <span class="text-primary mt-0.5"><svg class="w-4 h-4" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                    </path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg></span>
+                            525 N Tryon Street, Suite 1600<br />Charlotte, NC, USA
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-400 text-sm">
+                            <span class="text-primary"><svg class="w-4 h-4" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                                    </path>
+                                </svg></span>
+                            +1 980 446 0471
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-400 text-sm">
+                            <span class="text-primary"><svg class="w-4 h-4" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                    </path>
+                                </svg></span>
+                            <a href="mailto:admin@zyrecconstructions.com"
+                                class="hover:text-primary transition-colors">admin@zyrecconstructions.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Navigation -->
+                <div>
+                    <h4 class="font-display font-semibold text-white mb-6 uppercase tracking-wider text-sm">Sitemap</h4>
+                    <ul class="space-y-3">
+                        <li><a href="../about/"
+                                class="text-sm text-gray-400 hover:text-primary transition-colors">Company Story</a>
+                        </li>
+                        <li><a href="../services/"
+                                class="text-sm text-gray-400 hover:text-primary transition-colors">Expertise &
+                                Services</a></li>
+                        <li><a href="../projects/"
+                                class="text-sm text-gray-400 hover:text-primary transition-colors">Project Portfolio</a>
+                        </li>
+                        <li><a href="../news/" class="text-sm text-gray-400 hover:text-primary transition-colors">News &
+                                Insights</a></li>
+                        <li><a href="../faq/" class="text-sm text-gray-400 hover:text-primary transition-colors">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-xs font-light text-gray-500 tracking-wide">&copy; 2026 Zyrec Constructions. Founded on
+                    precision.</p>
+                <div class="flex gap-4 text-xs font-light text-gray-500">
+                    <a href="#" class="hover:text-white transition-colors">Privacy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll to Top (Minimal) -->
+        <div class="fixed bottom-6 right-6 md:bottom-8 md:right-8 z-[60]" id="scroll-to-top" style="display: none;">
+            <a href="#top"
+                class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-2xl hover:bg-primary transition-colors group">
+                <svg class="w-5 h-5 text-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path>
+                </svg>
+            </a>
+        </div>
+    </footer>
 </body>
+
 </html>

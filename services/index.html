@@ -1,251 +1,413 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-     <meta charset="UTF-8" />
-     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <meta
-        name="description"
-        content="Zyrec Constructions provides innovative and reliable building solutions, specializing in infrastructure for urban and remote developments."
-    />
-    <meta
-      name="keywords"
-      content="construction, infrastructure, building, civil engineering, urban development, remote projects, Zyrec"
-    />
-    <meta name="author" content="Zyrec Constructions" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="format-detection" content="telephone=no">
-    <title>Zyrec Constructions</title>
-    <link rel="stylesheet" href="../css/services.css" />
-    <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
-    <script src="../script.js" defer ></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Zyrec Constructions provides innovative and reliable building solutions, specializing in infrastructure for urban and remote developments." />
+  <meta name="keywords"
+    content="construction, infrastructure, building, civil engineering, urban development, remote projects, Zyrec" />
+  <meta name="author" content="Zyrec Constructions" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <title>Our Services | Zyrec Constructions</title>
 
+  <!-- Tailwind compiled CSS -->
+  <link rel="stylesheet" href="../css/tailwind-output.css" />
+  <link rel="icon" href="../images/favicon_z.png" type="image/png">
+
+  <!-- Fonts: Inter (Body) & Outfit (Headings) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;800;900&display=swap"
+    rel="stylesheet">
+
+  <script src="../script.js" defer></script>
 </head>
-<body id="top">
-    <header>
-    <section class="header-info">
-        <a href="../" class="header-logo-link">
-        <div class="header-logo">
-            <img src="../images/Zyrec_logo.png" loading="lazy"  width="100" height="100" alt="Zyrec logo">
-            <h1>ZYREC CONSTRUCTION <span class="yellow-text">COMPANY</span></h1>
-        </div>
-        </a>
-        <div class="header-contact">
-            <div class="header-contact-info">
-            <h2>+1 980 446 0471</h2>
-            <p>Have You Any Enquiries</p>
-            </div>
-            <div>
-                <a href="../contact/" class="get-a-quote">Get A Qoute</a>
-            </div>
-        </div>
-    </section>
-    <nav>
-            <ul>
-                <li><a href="../">HOME</a></li>
-                <li><a href="../about/">ABOUT</a></li>
-                <li><a href="../services/">SERVICES</a></li>
-                <li><a href="../projects/">PROJECTS</a></li>
-                <li><a href="../faq/">FAQ</a></li>
-                <li><a href="../contact/">CONTACT</a></li>
-                <li><a href="../news/">NEWS</a></li>
-            </ul>
-            <button class="hamburger" id="hamburger-menu" aria-label="Menu">
-  &#9776;
-</button>
 
-        </nav>
-    </header>
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h2>ZYREC CONSTRUCTIONS</h2>
-                <p>Building with Precision, Powered by Trust.</p>
+<body id="top" class="font-sans text-gray bg-light antialiased selection:bg-primary selection:text-dark">
+  <!-- Header / Navbar -->
+  <header
+    class="w-full bg-dark backdrop-blur-md shadow-sm z-50 transition-all duration-300 fixed border-b border-white/10"
+    id="main-header" style="position: sticky; top: 0;">
+    <nav class="max-w-[90rem] mx-auto py-5 px-6 md:px-12 flex justify-between items-center w-full" id="main-nav">
+      <!-- Logo -->
+      <a href="../" class="flex items-center gap-3 group">
+                <div class="w-8 h-8 md:w-10 md:h-10 bg-primary rounded-full flex items-center justify-center transition-transform group-hover:scale-110 duration-300">
+                    <span class="text-dark font-display font-black text-base md:text-lg">Z</span>
+                </div>
+                <h1 class="text-xl md:text-2xl font-display font-black text-white tracking-tight">
+                    ZYREC.
+                </h1>
+      </a>
+
+      <!-- Desktop Menu -->
+      <ul class="hidden lg:flex gap-8 items-center text-sm font-semibold tracking-wide uppercase">
+                <li><a href="../" class="text-white hover:text-primary transition-colors py-1 relative group">HOME<span
+              class="absolute left-0 -bottom-1 w-full h-[2px] bg-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span></a>
+        </li>
+                <li><a href="../about/" class="text-white hover:text-primary transition-colors py-1 relative group">ABOUT<span
+              class="absolute left-0 -bottom-1 w-full h-[2px] bg-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span></a>
+        </li>
+                <li><a href="../services/" class="text-primary transition-colors py-1 relative">SERVICES</a>
+        </li>
+                <li><a href="../projects/"
+            class="text-white hover:text-primary transition-colors py-1 relative group">PROJECTS<span
+              class="absolute left-0 -bottom-1 w-full h-[2px] bg-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span></a>
+        </li>
+                <li><a href="../faq/" class="text-white hover:text-primary transition-colors py-1 relative group">FAQ<span
+              class="absolute left-0 -bottom-1 w-full h-[2px] bg-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span></a>
+        </li>
+                <li><a href="../news/" class="text-white hover:text-primary transition-colors py-1 relative group">NEWS<span
+              class="absolute left-0 -bottom-1 w-full h-[2px] bg-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span></a>
+        </li>
+                <li><a href="../contact/"
+            class="text-white hover:text-primary transition-colors py-1 relative group">CONTACT<span
+              class="absolute left-0 -bottom-1 w-full h-[2px] bg-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span></a>
+        </li>
+            </ul>
+
+      <!-- CTA Button -->
+      <div class="hidden lg:flex items-center gap-6">
+        <a href="../contact/"
+          class="bg-primary text-dark font-semibold text-sm px-8 py-3 rounded-full hover:bg-white transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5">Get
+          A Quote</a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button class="lg:hidden relative w-8 h-6 text-white hover:text-primary transition-colors focus:outline-none" id="hamburger-menu"
+        aria-label="Menu">
+                <span class="hamburger-line top-line"></span>
+                <span class="hamburger-line middle-line"></span>
+                <span class="hamburger-line bottom-line"></span>
+            </button>
+
+      <!-- Mobile Dropdown -->
+      <ul id="mobile-menu"
+        class="hidden flex-col items-center gap-6 mt-6 bg-white shadow-2xl absolute top-full left-0 w-full p-8 lg:hidden border-t border-gray-100">
+                <li><a href="../"
+            class="hover:text-primary text-dark transition-colors font-display font-bold text-2xl">HOME</a>
+        </li>
+                <li><a href="../about/"
+            class="hover:text-primary text-dark transition-colors font-display font-bold text-2xl">ABOUT</a>
+        </li>
+                <li><a href="../services/"
+            class="hover:text-primary text-primary transition-colors font-display font-bold text-2xl">SERVICES</a>
+        </li>
+                <li><a href="../projects/"
+            class="hover:text-primary text-dark transition-colors font-display font-bold text-2xl">PROJECTS</a>
+        </li>
+                <li><a href="../faq/"
+            class="hover:text-primary text-dark transition-colors font-display font-bold text-2xl">FAQ</a>
+        </li>
+                <li><a href="../news/"
+            class="hover:text-primary text-dark transition-colors font-display font-bold text-2xl">NEWS</a>
+        </li>
+                
+                <li><a href="../contact/" class="hover:text-primary text-dark transition-colors font-display font-bold text-2xl">CONTACT</a></li>
+                <li><a href="../contact/"
+            class="mt-4 bg-primary text-dark font-bold px-10 py-4 rounded-full w-full text-center hover:bg-dark hover:text-white transition-colors">GET
+            A QUOTE</a></li>
+            </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Typographic Hero -->
+    <section class="min-h-[50vh] bg-dark flex flex-col justify-center items-center text-center px-6 relative overflow-hidden border-b border-primary/20">
+            <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#FBBF24 1px, transparent 1px); background-size: 30px 30px;"></div>
+            <div class="relative z-10 max-w-4xl mt-12">
+                <span class="inline-block py-1 px-3 rounded-full bg-primary/20 text-primary font-semibold tracking-widest text-sm uppercase mb-4 animate-fade-in-up">Expertise</span>
+                <h1 class="text-5xl md:text-7xl font-display font-black text-white tracking-tight mb-6 animate-fade-in-up" style="animation-delay: 100ms;">
+                    ZYREC <span class="text-primary italic">CONSTRUCTIONS</span>
+                </h1>
+                <p class="text-lg md:text-xl text-white leading-relaxed font-light max-w-2xl mx-auto animate-fade-in-up" style="animation-delay: 200ms;">
+                    Building with Precision, Powered by Trust.
+                </p>
             </div>
         </section>
-        
 
-        <section class="services">
-        <h2>Services</h2>
-        <p>
-            Zyrec Constructions provides essential expertise and services for delivering
-            successful infrastructure and building projects across developing and urbanizing
-            regions worldwide. Our integrated approach supports contractors, developers, and
-            institutions of all sizes, and is adaptable to both new builds and upgrades to existing
-            structures. In addition to our advanced systems and tools, our experienced team
-            offers end to end guidance from initial planning and design to execution and
-            maintenance. We are a trusted partner for developers, governments, NGOs, and
-            organizations seeking scalable, cost-effective construction solutions in growing or
-            underserved areas.
+    <!-- Services Overview -->
+    <section class="py-24 px-6 bg-white border-b border-gray-100">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-display font-bold text-dark mb-8">Capabilities & Offerings</h2>
+        <p class="text-lg text-gray leading-relaxed font-light">
+          Zyrec Constructions provides essential expertise and services for delivering
+          successful infrastructure and building projects across developing and urbanizing
+          regions worldwide. Our integrated approach supports contractors, developers, and
+          institutions of all sizes, and is adaptable to both new builds and upgrades to existing
+          structures. In addition to our advanced systems and tools, our experienced team
+          offers end to end guidance from initial planning and design to execution and
+          maintenance. We are a trusted partner for developers, governments, NGOs, and
+          organizations seeking scalable, cost-effective construction solutions in growing or
+          underserved areas.
         </p>
-      </section>
-      <hr />
-      <section class="services-2">
-        <h2>Construction Site Operations Management</h2>
+      </div>
+    </section>
 
-        <img
-          src="../images/excravator.jpg"
-          width="1000"
-          height="667"
-          loading="lazy"
-          alt="Excravator"
-          class="excravator"
-          loading="lazy" 
-        />
-        <p>
-            At Zyrec Construction, every project begins with precision and power  and nothing embodies that better than the excavator. More than just breaking ground, it marks the start of a carefully coordinated process driven by experience, technology, and control. Our teams leverage advanced tools to ensure seamless scheduling, on-site efficiency, and real-time oversight from the very first dig. Whether it's clearing the way for foundations or managing timelines behind the scenes, Zyrec delivers smart, scalable construction solutions that move projects forward safely, quickly, and reliably.
-        </p>
-      </section>
-      <hr />
-      <section class="services-3">
-        <h2>Construction Specialties</h2>
-        <div class="services-3-container">
-          <div class="services-3-a">
-            <figure>
-              <img
-                src="../images/bride-construction.jpg"
-                width="1000"
-                height="667"
-                alt="Bridge Construction"
-                loading="lazy" 
-              />
-            </figure>
-            <h3>Bridge Construction</h3>
-            <p>
-              Using our proprietary BRIDGEPLAN system, we rapidly identify ideal bridge construction sites by remotely analyzing structural, environmental, and logistical data. Whether your project involves a single overpass or a complex multi-span crossing, we deliver detailed site evaluations ranked by feasibility and impact. When it's time for on site inspections and stakeholder coordination, our platform streamlines the process, empowering your team to act decisively and efficiently.
+    <!-- Operations Management -->
+    <section class="py-24 px-6 bg-light border-b border-gray-200">
+      <div class="max-w-[80rem] mx-auto grid lg:grid-cols-2 gap-16 items-center">
+        <div class="order-2 lg:order-1">
+          <h2 class="text-3xl md:text-4xl font-display font-bold text-dark mb-6">Construction Site Operations Management
+          </h2>
+          <p class="text-lg text-gray leading-relaxed font-light mb-8">
+            At Zyrec Construction, every project begins with precision and power and nothing embodies that better than
+            the
+            excavator. More than just breaking ground, it marks the start of a carefully coordinated process driven by
+            experience, technology, and control. Our teams leverage advanced tools to ensure seamless scheduling,
+            on-site
+            efficiency, and real-time oversight from the very first dig. Whether it's clearing the way for foundations
+            or
+            managing timelines behind the scenes, Zyrec delivers smart, scalable construction solutions that move
+            projects
+            forward safely, quickly, and reliably.
+          </p>
+        </div>
+        <div class="order-1 lg:order-2 rounded-3xl overflow-hidden shadow-2xl">
+          <img src="../images/excravator.jpg" loading="lazy" alt="Excavator"
+            class="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-700" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Construction Specialties Grid -->
+    <section class="py-24 px-6 bg-white">
+      <div class="max-w-[90rem] mx-auto">
+        <div class="text-center mb-20">
+          <span class="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">Focus Areas</span>
+          <h2 class="text-4xl md:text-5xl font-display font-black text-dark tracking-tight">Construction Specialties
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12 gap-y-20">
+          <!-- Bridge -->
+          <div class="group flex flex-col items-start text-left">
+            <div class="w-full rounded-3xl overflow-hidden mb-8 shadow-lg aspect-[5/3]">
+              <img src="../images/bride-construction.jpg" loading="lazy" alt="Bridge Construction"
+                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+            </div>
+            <h3 class="text-2xl font-display font-bold text-dark mb-4">Bridge Construction</h3>
+            <p class="text-gray leading-relaxed font-light">
+              Using our proprietary BRIDGEPLAN system, we rapidly identify ideal bridge construction sites by remotely
+              analyzing structural, environmental, and logistical data. Whether your project involves a single overpass
+              or
+              a complex multi-span crossing, we deliver detailed site evaluations ranked by feasibility and impact. When
+              it's time for on site inspections and stakeholder coordination, our platform streamlines the process,
+              empowering your team to act decisively and efficiently.
             </p>
           </div>
 
-
-          <div class="services-3-b">
-            <figure>
-              <img
-                src="../images/airport-construction.jpg"
-                width="1000"
-                height="667"
-                alt="Airport Runway"
-                loading="lazy" 
-              />
-            </figure>
-            <h3>Airport Runway Construction</h3>
-            <p>
-            With our structured runway planning framework, we quickly identify optimal airport runway sites by evaluating environmental, regulatory, and structural factors. Whether your project involves a regional airstrip or a major international expansion, we deliver detailed site assessments focused on safety, feasibility, and compliance. When it’s time for field evaluations and regulatory engagement, our process simplifies coordination, allowing your team to move forward efficiently and with confidence.            </p>
-          </div>
-        </div>
-        <div class="services-3-container">
-          <div class="services-3-c">
-            <figure>
-              <img
-                src="../images/gasplant.jpg"
-                width="1000"
-                height="667"
-                alt="Gas Plant"
-                loading="lazy" 
-              />
-            </figure>
-            <h3>Gas Plant Building Services</h3>
-            <p>Building a gas processing plant requires precision, deep industry knowledge, and strict compliance with safety and environmental standards. At Zyrec Construction, we handle every stage from site analysis and structural design to equipment integration and field execution. Our team works closely with engineers, regulators, and project stakeholders to ensure seamless delivery. Whether it's a compact facility or a large-scale installation, we deliver results that are efficient, compliant, and built to last.</p>
-          </div>
-          <div class="services-3-d">
-            <figure>
-              <img
-                src="../images/road-construction.jpg"
-                width="1000"
-                height="667"
-                alt="Road Construction"
-                loading="lazy" 
-              />
-            </figure>
-            <h3>Road Construction</h3>
-            <p>At Zyrec Construction, we approach road building with a focus on durability, efficiency, and long-term impact. From rural access routes to major urban highways, our team handles planning, grading, drainage, and paving with technical precision. We collaborate with engineers and local authorities to meet safety standards and community needs. Every road we build is designed to withstand heavy use, reduce maintenance, and improve connectivity across regions.</p>
-          </div>
-        </div>
-        <div class="services-3-container">
-          <div class="services-3-e">
-            <figure>
-              <img
-                src="../images/building-construction.jpg"
-                width="1000"
-                height="667"
-                alt="Building Construction"
-                loading="lazy" 
-              />
-            </figure>
-            <h3>Building Construction</h3>
-            <p>Every structure begins with a vision and turning that vision into reality takes expertise, precision, and coordination. We handle building projects of all scales, blending architectural intent with practical execution. Whether it's residential, commercial, or mixed-use, our approach is rooted in quality materials, skilled labor, and attention to every detail. From groundbreaking to handover, we deliver spaces built to inspire, function, and endure.</p>
-          </div>
-          <div class="services-3-f">
-            <figure>
-              <img
-                src="../images/railway-construction.jpg"
-                width="1000"
-                height="667"
-                alt="Railway Construction"
-                loading="lazy" 
-              />
-            </figure>
-            <h3>Railway Construction</h3>
-            <p>Railway infrastructure starts with strategic planning and demands a high level of technical execution. We manage rail projects of varying complexity, aligning engineering precision with ground realities. From grading and track laying to station works and signaling systems, our focus is on durability, safety, and operational efficiency. Whether for cargo or commuter use, we deliver rail systems designed to perform reliably and connect communities for years to come.</p>
-          </div>
-        </div>
-      </section>
-
-    </main>
-<footer>
-    <div class="footer-details">
-        <div class="contact">
-            <h4>Quick Contact</h4>
-            <div class="contact-details">
-                <img src="../images/phone-icon.png" loading="lazy"  width="30" height="30" alt="Phone Icon">
-                <p>+1 980 446 0471</p>
+          <!-- Airport -->
+          <div class="group flex flex-col items-start text-left">
+            <div class="w-full rounded-3xl overflow-hidden mb-8 shadow-lg aspect-[5/3]">
+              <img src="../images/airport-construction.jpg" loading="lazy" alt="Airport Runway"
+                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
             </div>
-            <div class="contact-details">
-                <img src="../images/email-icon.png" loading="lazy"  width="30" height="30" alt="Email Icon">
-                <p>admin@zyrecconstructions.com</p>
-            </div>
-            <div class="contact-details">
-                <img src="../images/location-icon.png" loading="lazy"  width="30" height="30" alt="Location Icon">
-                <p>525 N Tryon Street, Suite 1600, Charlotte, NC, USA.</p>
-            </div>
-             <div class="contact-details">
-                <img src="../images/footer-clock-icon.png" loading="lazy"  width="30" height="30" alt="Clock Icon">
-                <p>9 AM - 5 PM</p>
-            </div>
-        </div>
-            <div class="quick-links">
-                <h4>Quick Links</h4>
-                <ul>
-               <li><a href="../about/"><img src="../images/check-mark-icon.png" loading="lazy"  width="18" height="18"  alt="Check Mark Icon">About Us</a></li> 
-                <li><a href="../services/"><img src="../images/check-mark-icon.png" loading="lazy"  width="18" height="18"  alt="Check Mark Icon">Services</a></li> 
-                <li><a href="../contact/"><img src="../images/check-mark-icon.png" loading="lazy"  width="18" height="18"  alt="Check Mark Icon">Contact Us</a></li> 
-                <li><a href="../faq/"><img src="../images/check-mark-icon.png" loading="lazy"  width="18" height="18"  alt="Check Mark Icon">FAQ</a></li> 
-                <li><a href="../projects/"><img src="../images/check-mark-icon.png" loading="lazy"  width="18" height="18"  alt="Check Mark Icon">Projects</a></li> 
-                <li><a href="../news/"><img src="../images/check-mark-icon.png" loading="lazy"  width="18" height="18"  alt="Check Mark Icon">News</a></li> 
-
-            </ul>
-            </div>
-        <div class="brief">
-            <h4>Brief About Us</h4>
-            <p>
-                Zyrec Construction Company has been delivering trusted building solutions since 1989, serving residential, commercial, and industrial sectors. Co-owned by industry experts Nathan Hegseth and Michael Zhen Yang, Zyrec is built on a legacy of excellence, precision, and innovation.
+            <h3 class="text-2xl font-display font-bold text-dark mb-4">Airport Runway Construction</h3>
+            <p class="text-gray leading-relaxed font-light">
+              With our structured runway planning framework, we quickly identify optimal airport runway sites by
+              evaluating environmental, regulatory, and structural factors. Whether your project involves a regional
+              airstrip or a major international expansion, we deliver detailed site assessments focused on safety,
+              feasibility, and compliance. When it's time for field evaluations and regulatory engagement, our process
+              simplifies coordination, allowing your team to move forward efficiently and with confidence.
             </p>
-            <a href="../about/" class="know-more-button">Know More</a>
-        </div>
-    </div>
-    <hr>
-   <div class="copyright-and-socials">
-    <div class="social-icons">
-        <img src="../images/twitter.png" loading="lazy"  width="16" height="16" alt="twitter icon">
-        <img src="../images/facebook.png" loading="lazy"  width="16" height="16" alt="facebook icon">
-        <img src="../images/instagram.png" loading="lazy"  width="16" height="16" alt="instagram icon">
-        <img src="../images/youtube.png" loading="lazy"  width="16" height="16" alt="youtube icon">
-        <img src="../images/skype-icon.png" loading="lazy"  width="16" height="16" alt="wordpress icon">
-    </div>
-    <p>&copy Zyrec Constructions 2025 - All rights reserved</p>
-    </div>
-    <div class="upward-icon">
-        <a href="#top"><img src="../images/upward-arrow-icon.png" loading="lazy"  width="45" height="45" alt="upward-icon"></a>
-    </div>
-</footer>
+          </div>
 
+          <!-- Gas Plant -->
+          <div class="group flex flex-col items-start text-left">
+            <div class="w-full rounded-3xl overflow-hidden mb-8 shadow-lg aspect-[5/3]">
+              <img src="../images/gasplant.jpg" loading="lazy" alt="Gas Plant"
+                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+            </div>
+            <h3 class="text-2xl font-display font-bold text-dark mb-4">Gas Plant Building Services</h3>
+            <p class="text-gray leading-relaxed font-light">
+              Building a gas processing plant requires precision, deep industry knowledge, and strict compliance with
+              safety and environmental standards. At Zyrec Construction, we handle every stage from site analysis and
+              structural design to equipment integration and field execution. Our team works closely with engineers,
+              regulators, and project stakeholders to ensure seamless delivery. Whether it's a compact facility or a
+              large-scale installation, we deliver results that are efficient, compliant, and built to last.
+            </p>
+          </div>
+
+          <!-- Road Construction -->
+          <div class="group flex flex-col items-start text-left">
+            <div class="w-full rounded-3xl overflow-hidden mb-8 shadow-lg aspect-[5/3]">
+              <img src="../images/road-construction.jpg" loading="lazy" alt="Road Construction"
+                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+            </div>
+            <h3 class="text-2xl font-display font-bold text-dark mb-4">Road Construction</h3>
+            <p class="text-gray leading-relaxed font-light">
+              At Zyrec Construction, we approach road building with a focus on durability, efficiency, and long-term
+              impact. From rural access routes to major urban highways, our team handles planning, grading, drainage,
+              and
+              paving with technical precision. We collaborate with engineers and local authorities to meet safety
+              standards and community needs. Every road we build is designed to withstand heavy use, reduce maintenance,
+              and improve connectivity across regions.
+            </p>
+          </div>
+
+          <!-- Building Construction -->
+          <div class="group flex flex-col items-start text-left">
+            <div class="w-full rounded-3xl overflow-hidden mb-8 shadow-lg aspect-[5/3]">
+              <img src="../images/building-construction.jpg" loading="lazy" alt="Building Construction"
+                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+            </div>
+            <h3 class="text-2xl font-display font-bold text-dark mb-4">Building Construction</h3>
+            <p class="text-gray leading-relaxed font-light">
+              Every structure begins with a vision and turning that vision into reality takes expertise, precision, and
+              coordination. We handle building projects of all scales, blending architectural intent with practical
+              execution. Whether it's residential, commercial, or mixed-use, our approach is rooted in quality
+              materials,
+              skilled labor, and attention to every detail. From groundbreaking to handover, we deliver spaces built to
+              inspire, function, and endure.
+            </p>
+          </div>
+
+          <!-- Railway Construction -->
+          <div class="group flex flex-col items-start text-left">
+            <div class="w-full rounded-3xl overflow-hidden mb-8 shadow-lg aspect-[5/3]">
+              <img src="../images/railway-construction.jpg" loading="lazy" alt="Railway Construction"
+                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+            </div>
+            <h3 class="text-2xl font-display font-bold text-dark mb-4">Railway Construction</h3>
+            <p class="text-gray leading-relaxed font-light">
+              Railway infrastructure starts with strategic planning and demands a high level of technical execution. We
+              manage rail projects of varying complexity, aligning engineering precision with ground realities. From
+              grading and track laying to station works and signaling systems, our focus is on durability, safety, and
+              operational efficiency. Whether for cargo or commuter use, we deliver rail systems designed to perform
+              reliably and connect communities for years to come.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Global CTA -->
+    <section class="py-24 bg-dark text-white text-center px-6 border-b border-white/5">
+      <h2 class="text-4xl md:text-5xl font-display font-black tracking-tight mb-8">Ready to start building? <br /><span
+          class="text-primary italic">Contact us today.</span></h2>
+      <a href="../contact/"
+        class="inline-flex bg-transparent border-2 border-primary text-primary font-semibold text-lg px-12 py-4 rounded-full hover:bg-primary hover:text-dark transition-all duration-300 shadow-xl hover:-translate-y-1">
+        Start a Project
+      </a>
+    </section>
+
+  </main>
+
+  <!-- Modern Minimal Footer -->
+  <footer class="bg-dark text-white pt-24 pb-12 border-t border-white/5">
+    <div class="max-w-[90rem] mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-24">
+        <!-- Brand -->
+        <div class="lg:col-span-1">
+          <a href="../" class="flex items-center gap-3 mb-6">
+            <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+              <span class="text-dark font-display font-black text-sm">Z</span>
+            </div>
+            <h2 class="text-xl font-display font-black tracking-tight">ZYREC.</h2>
+          </a>
+          <p class="text-gray-400 font-light text-sm leading-relaxed mb-8">
+            Global leaders in precision engineering and future-ready infrastructure development.
+          </p>
+
+          <!-- SVG Social Links -->
+          <div class="flex gap-4">
+            <a href="#" class="text-gray-500 hover:text-primary transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+              </svg>
+            </a>
+            <a href="#" class="text-gray-500 hover:text-primary transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                  clip-rule="evenodd" />
+              </svg>
+            </a>
+            <a href="#" class="text-gray-500 hover:text-primary transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Operations -->
+        <div>
+          <h4 class="font-display font-semibold text-white mb-6 uppercase tracking-wider text-sm">Operations</h4>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3 text-gray-400 text-sm">
+              <span class="text-primary mt-0.5"><svg class="w-4 h-4" fill="none" stroke="currentColor"
+                  viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg></span>
+              525 N Tryon Street, Suite 1600<br />Charlotte, NC, USA
+            </li>
+            <li class="flex items-center gap-3 text-gray-400 text-sm">
+              <span class="text-primary"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                  </path>
+                </svg></span>
+              +1 980 446 0471
+            </li>
+            <li class="flex items-center gap-3 text-gray-400 text-sm">
+              <span class="text-primary"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                  </path>
+                </svg></span>
+              <a href="mailto:admin@zyrecconstructions.com"
+                class="hover:text-primary transition-colors">admin@zyrecconstructions.com</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Navigation -->
+        <div>
+          <h4 class="font-display font-semibold text-white mb-6 uppercase tracking-wider text-sm">Sitemap</h4>
+          <ul class="space-y-3">
+            <li><a href="../about/" class="text-sm text-gray-400 hover:text-primary transition-colors">Company Story</a>
+            </li>
+            <li><a href="../services/" class="text-sm text-gray-400 hover:text-primary transition-colors">Expertise &
+                Services</a></li>
+            <li><a href="../projects/" class="text-sm text-gray-400 hover:text-primary transition-colors">Project
+                Portfolio</a></li>
+            <li><a href="../news/" class="text-sm text-gray-400 hover:text-primary transition-colors">News &
+                Insights</a></li>
+            <li><a href="../faq/" class="text-sm text-gray-400 hover:text-primary transition-colors">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-xs font-light text-gray-500 tracking-wide">&copy; 2026 Zyrec Constructions. Founded on precision.
+        </p>
+        <div class="flex gap-4 text-xs font-light text-gray-500">
+          <a href="#" class="hover:text-white transition-colors">Privacy</a>
+          <a href="#" class="hover:text-white transition-colors">Terms</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll to Top (Minimal) -->
+    <div class="fixed bottom-6 right-6 md:bottom-8 md:right-8 z-[60]" id="scroll-to-top" style="display: none;">
+      <a href="#top"
+        class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-2xl hover:bg-primary transition-colors group">
+        <svg class="w-5 h-5 text-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path>
+        </svg>
+      </a>
+    </div>
+  </footer>
 </body>
+
 </html>

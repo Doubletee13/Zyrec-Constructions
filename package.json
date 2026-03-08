@@ -1,0 +1,12 @@
+{
+  "name": "zyrec-constructions",
+  "version": "1.0.0",
+  "description": "Zyrec Constructions Website",
+  "scripts": {
+    "build:css": "tailwindcss -i ./css/tailwind-input.css -o ./css/tailwind-output.css",
+    "watch:css": "tailwindcss -i ./css/tailwind-input.css -o ./css/tailwind-output.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}

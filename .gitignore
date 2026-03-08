@@ -1,0 +1,15 @@
+# Dependencies
+node_modules/
+.npm/
+
+# Build outputs
+css/tailwind-output.css
+dist/
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Brain/Artifacts (If pushing to public repo)
+.gemini/
+brain/
